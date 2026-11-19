@@ -296,7 +296,7 @@ flowchart LR
 **步骤四，可执行资产装配和数据生产。** 将实例导入 Isaac Sim，使用凸分解生成碰撞几何，配置重力和摩擦；给定人工或 LLM 生成的任务，调用运动规划器生成避碰轨迹并记录 RGB、关节状态和动作。支持对象增删、替换、重排，以低成本构建场景变体。这里的“物理合理性”主要体现在场景稳定、布局及碰撞有效；不能据此断言摩擦系数和接触动力学已与现实准确一致。
 
 #### ⑥ 完整 Pipeline（中文重绘）
-~~~mermaid
+```mermaid
 flowchart TD
  A[文本描述或单张图片] --> B[文本扩写/参考图像]
  B --> C[开放词汇分割与遮挡补全]
@@ -309,7 +309,7 @@ flowchart TD
  H --> I[任务生成/运动规划/轨迹记录]
  I --> J[模拟数据微调策略]
  J --> K[真机零样本测试]
-~~~
+```
 
 [查看独立中文方法流程 SVG](../../assets/methods/TabletopGen.svg)。
 
@@ -363,7 +363,7 @@ flowchart TD
 **步骤五，Agent–Skill–Harness 增量编辑。** Agent 理解自然语言、选择 Skill；Skill 将操作交给确定性布局求解器和仿真运行器；Harness 维护 Scene Graph、资产、位姿和编辑历史。通过 Parse–Ground–Invoke–Commit 过程，每次只提交通过物理与几何约束的状态变更，失败时保留原状态。这是“Vibe Coding”背后的工程含义，而非直接依赖语言模型自由生成模型文件。
 
 #### ⑥ 完整 Pipeline（中文重绘）
-~~~mermaid
+```mermaid
 flowchart TD
  A[文本/图片/任务描述] --> B[分割与图生3D]
  B --> C[质量门控/网格修复/纹理烘焙/凸分解]
@@ -380,7 +380,7 @@ flowchart TD
  J --> M
  M --> J
  J --> N[VLA/RL 训练及评测]
-~~~
+```
 
 [查看独立中文方法流程 SVG](../../assets/methods/EmbodiedGenV2.svg)。
 
@@ -432,7 +432,7 @@ flowchart TD
 **步骤四，评测与训练双用途。** Real-to-Sim Evaluation 把已有真实策略在重建环境中进行不依赖针对该模拟器微调的测试，比较模拟/真实成功率与策略排名；Sim-to-Real Training 则在数字孪生与近邻场景中自动生成示教，训练或微调策略后真机直接评估，也包含 Sim+Real 混合训练实验。这样才能验证一个“可生成场景”工具到底是否对真实策略研发有用。
 
 #### ⑥ 完整 Pipeline（中文重绘）
-~~~mermaid
+```mermaid
 flowchart TD
  A[单段真实场景视频] --> B[深度/相机位姿/对象分割]
  B --> C[前景实例 Mesh 与 6DoF 配准]
@@ -450,7 +450,7 @@ flowchart TD
  J --> L[仿真示教/策略训练]
  K --> M[与真机成功率及排序对比]
  L --> N[Sim-to-Real 真机部署]
-~~~
+```
 
 [查看独立中文方法流程 SVG](../../assets/methods/SimFoundry.svg)。
 
