@@ -21,6 +21,9 @@ PAPERS = [
                 "https://arxiv.org/pdf/2510.20813"], 1, 2),
     ("RE3SIM", ["https://arxiv.org/pdf/2502.08645"], 1, 2),
     ("RoboRender", ["https://arxiv.org/pdf/2610.09254"], 1, 2),
+    ("TabletopGen", ["https://arxiv.org/pdf/2512.01204v4", "https://arxiv.org/pdf/2512.01204"], 1, 2),
+    ("EmbodiedGenV2", ["https://arxiv.org/pdf/2607.07459v3", "https://arxiv.org/pdf/2607.07459"], 1, 2),
+    ("SimFoundry", ["https://arxiv.org/pdf/2606.28276v4", "https://arxiv.org/pdf/2606.28276"], 1, 2),
     ("SPARR", ["https://arxiv.org/pdf/2602.23253"], 1, 3),
     ("SoMA", ["https://raw.githubusercontent.com/mlresearch/v306/main/assets/huang26bh/huang26bh.pdf"], 1, 2),
     ("PIN-WM", ["https://www.roboticsproceedings.org/rss21/p153.pdf"], 1, 2),
@@ -35,6 +38,20 @@ PAPERS = [
 # Manual, PDF-point crop rectangles for papers with image-only captions and
 # layouts where Figure 1 spans both columns despite a narrow caption line.
 MANUAL_CROPS = {
+    # These page/figure rectangles were verified against the three PDFs
+    # supplied on 2026-11-19. Coordinates are in PDF points (zero-based page).
+    "TabletopGen": {
+        "overview": (1, [125, 108, 490, 375], 1, "Fig. 1: Tabletop interactive scene, scene expansion and data synthesis"),
+        "architecture": (5, [130, 105, 495, 414], 2, "Fig. 2: Generative instance extraction, DRO/TSA alignment and interactive simulation"),
+    },
+    "EmbodiedGenV2": {
+        "overview": (0, [70, 305, 548, 736], 1, "Figure 1: Task-driven, large-scale and Vibe Coding 3D worlds"),
+        "architecture": (3, [70, 67, 539, 502], 2, "Figure 2: Sim-ready asset-generation and cross-simulator export"),
+    },
+    "SimFoundry": {
+        "overview": (0, [65, 225, 532, 506], 1, "Figure 1: Real-to-sim digital twin and object/scene/task cousins"),
+        "architecture": (3, [58, 80, 541, 466], 2, "Figure 2: Extraction, scene generation and cousin augmentations"),
+    },
     "PIN-WM": {
         "overview": (0, [305, 195, 575, 403], 1, "Fig. 1: PIN-WM learning and physical digital cousins"),
         "architecture": (3, [42, 54, 570, 353], 2, "Fig. 2: Physics-informed Real2Sim2Real framework"),
@@ -53,7 +70,7 @@ MANUAL_CROPS = {
         "architecture": (3, [44, 47, 574, 280], 2, "Fig. 2: Method overview: task-aware digital cousins and sim-real policy co-training"),
     },
 }
-REFRESH = {"SPARR"}
+REFRESH = set()  # Keep prior verified screenshots unchanged when adding papers
 
 FIG_RE = re.compile(r"^\s*(?:fig\.?|figure)\s*(\d+)\s*[:.\-\u2014]", re.IGNORECASE)
 SESSION = requests.Session()
@@ -203,8 +220,8 @@ def main():
             print(f"  FAILURE {str(e)[:250]}", flush=True)
     (DEST/"manifest.json").write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     total=sum(len(x["screenshots"]) for x in manifest["papers"].values())
-    print(f"FINISHED: {total}/24 original screenshots, {len(manifest['failures'])} warnings", flush=True)
-    if total < 14:
-        raise SystemExit("Fewer than 14 actual screenshots extracted. Manual review needed.")
+    print(f"FINISHED: {total}/30 original screenshots, {len(manifest['failures'])} warnings", flush=True)
+    if total < 30:
+        raise SystemExit("Fewer than 30 actual screenshots extracted. Manual review needed.")
 if __name__=="__main__":
     main()
