@@ -312,7 +312,7 @@ flowchart TD
 
 ## 4.6 交叉阅读：SimFoundry 的 Digital Cousins 如何扩增有效任务与轨迹覆盖
 
-本节是对第二章 [SimFoundry（§2.4.3）](../02-visual.md#243-simfoundry从单段实景视频到数字孪生数字近邻及策略验证闭环) 的**跨章节引用**，不重复将其统计为第四章另一篇独立论文。SimFoundry 先从单段实景视频生成 Sim-Ready Digital Twin，然后沿三个不同轴扩增保持关键交互可供性（Affordance）的数字近邻，供仿真数据生成与策略评测使用：[原论文 arXiv:2606.28276](https://arxiv.org/abs/2606.28276)；[原文 Figure 2](../../assets/paper-screenshots/SimFoundry-architecture.jpg)。
+本节是对第二章 [SimFoundry（§2.4.3）](02-visual.md#243-simfoundry从单段实景视频到数字孪生数字近邻及策略验证闭环) 的**跨章节引用**，不重复将其统计为第四章另一篇独立论文。SimFoundry 先从单段实景视频生成 Sim-Ready Digital Twin，然后沿三个不同轴扩增保持关键交互可供性（Affordance）的数字近邻，供仿真数据生成与策略评测使用：[原论文 arXiv:2606.28276](https://arxiv.org/abs/2606.28276)；[原文 Figure 2](../../assets/paper-screenshots/SimFoundry-architecture.jpg)。
 
 | 扩增轴 | 什么被改变 | 可能增加的训练覆盖 | 是否一定生成新动作轨迹 | 关键风险 |
 |---|---|---|---|---|
@@ -326,7 +326,7 @@ flowchart TD
 
 **复用时建议分开统计五层指标**：生成场景数量、初态/对象/任务覆盖、物理可执行的示教成功率、观测—动作多样性、真机下游收益。具体来说，从 Digital Twin 派生 Cousin 后仍应运行碰撞/稳定性/任务成功检查，保存来源视频和场景随机种子，并区分“更换图像外观”与“策略真正采用不同接触/动作路径”。
 
-~~~mermaid
+```mermaid
 flowchart TD
  A[真实场景视频] --> B[Sim-Ready Digital Twin]
  B --> C[Object Cousins: 对象实例变化]
@@ -338,4 +338,4 @@ flowchart TD
  F --> G[有效的观测/动作/任务数据]
  G --> H[训练策略并进行真机测试]
  H --> I[检查迁移收益与评测相关性]
-~~~
+```
