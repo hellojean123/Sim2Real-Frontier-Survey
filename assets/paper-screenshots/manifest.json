@@ -982,7 +982,32 @@
     "ABotPhysWorld": {
       "pdf": "https://arxiv.org/pdf/2603.23376",
       "available_figure_numbers": [],
-      "screenshots": {}
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/ABotPhysWorld-overview.jpg",
+          "page": 3,
+          "figure": 1,
+          "caption": "Figure 1: Data creation and training pipeline",
+          "crop_pdf_points": [
+            65.0,
+            421.0,
+            545.0,
+            636.0
+          ]
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/ABotPhysWorld-architecture.jpg",
+          "page": 4,
+          "figure": 2,
+          "caption": "Figure 2: Two-stage training pipeline",
+          "crop_pdf_points": [
+            65.0,
+            60.0,
+            545.0,
+            330.0
+          ]
+        }
+      }
     },
     "Principia": {
       "pdf": "https://arxiv.org/pdf/2609.04200",
@@ -1024,29 +1049,33 @@
     "PVBench": {
       "pdf": "https://arxiv.org/pdf/2610.26711",
       "available_figure_numbers": [],
-      "screenshots": {}
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/PVBench-overview.jpg",
+          "page": 2,
+          "figure": 1,
+          "caption": "Figure 1: Overview and categories of PVBench",
+          "crop_pdf_points": [
+            65.0,
+            393.0,
+            545.0,
+            662.0
+          ]
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/PVBench-architecture.jpg",
+          "page": 4,
+          "figure": 2,
+          "caption": "Figure 2: PVBench prompt and evaluation data curation",
+          "crop_pdf_points": [
+            65.0,
+            205.0,
+            545.0,
+            443.0
+          ]
+        }
+      }
     }
   },
-  "failures": [
-    {
-      "paper": "ABotPhysWorld",
-      "kind": "overview",
-      "error": "caption not located"
-    },
-    {
-      "paper": "ABotPhysWorld",
-      "kind": "architecture",
-      "error": "caption not located"
-    },
-    {
-      "paper": "PVBench",
-      "kind": "overview",
-      "error": "caption not located"
-    },
-    {
-      "paper": "PVBench",
-      "kind": "architecture",
-      "error": "caption not located"
-    }
-  ]
+  "failures": []
 }
