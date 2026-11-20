@@ -1,10 +1,6 @@
 name: Capture original paper figures
 
 on:
-  push:
-    paths:
-      - scripts/capture_paper_figures.py
-      - .github/workflows/capture-figures.yml
   workflow_dispatch:
 
 permissions:
