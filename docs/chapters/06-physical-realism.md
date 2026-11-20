@@ -33,7 +33,7 @@ $$
 | **触觉真实性** | TactileLab、TouchTwin | 触觉流、接触时间和施力 | 真实触觉/关节/视觉同步 | 昂贵传感器、接触隐变量 |
 | **物理世界模型与评价** | RoboScape、ABot-PhysWorld、Principia、PVBench | 视频动力学表征、物理偏好和可量化诊断 | 动作视频、物理标注、物体追踪 | 视频合理不代表接触力精准 |
 
-~~~mermaid
+```mermaidd
 flowchart TD
   A["物理真实性研究"] --> B["物理资产和物理场景"]
   A --> C["接触/柔性/多材料动力学"]
@@ -45,7 +45,7 @@ flowchart TD
   E --> G["物理规律与条件动作评测"]
   F --> H["真实任务验证"]
   G --> H
-~~~
+```
 
 **本章组织原则**：正文每篇均按原先确认的八部分呈现。方法介绍优先说明输入、物理表示、训练/辨识、仿真输出与真实验证；对只在 arXiv 上发表的工作明确标明预印本；论文中的相对指标、绝对数值和实验范围不混用。
 
@@ -1101,4 +1101,4 @@ $$
 
 建议先按以下顺序精读原文：**Scalable Real2Sim → Contact-Aware Neural Dynamics → Few-Shot Neural Differentiable Simulator → PhysTwin → TactileLab/TouchTwin → Principia/PVBench**。这样依次建立物理参数的可辨识性、接触动力学、柔性状态、触觉监督和物理量评价的完整认识。
 
-图示均来自对应论文 PDF 的 Figure 1/2 截取，若某论文 PDF 特殊版式尚未取得稳定截图，则只放原始 PDF 链接，并注明缺失原因；不能把作者官网 Teaser 或中文 Mermaid 误标为原论文方法架构图。新增论文均保留其真实发表状态，不采用“证据等级”评级。
+图示均来自对应论文 PDF 的 Figure 1/2 截取，若某论文 PDF 特殊版式尚未取得稳定截图，则只放原始 PDF 链接，并注明缺失原因；不能把作者官网 Teaser 或中文 Mermaid 误标为原论文方法架构图。新增论文均保留其真实发表状态。
