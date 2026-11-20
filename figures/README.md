@@ -1,6 +1,6 @@
 # 作者原始论文截图索引（2025–2026）
 
-中文综述每篇直接插入两张**从原论文 PDF 截取的图**；文件保存在仓库内而非外部图床。下方页码表示本次采用的 PDF 页码（从 1 开始），可能与论文印刷页码不同。
+中文综述目前包含 29 篇研究，每篇直接插入两张**从原论文 PDF 截取的图**；文件保存在仓库内而非外部图床。下方页码表示本次采用的 PDF 页码（从 1 开始），可能与论文印刷页码不同。
 
 | 论文 | 论文主图（Figure 及 PDF 页码） | 方法架构图 / 第二张关键图 | 原论文 PDF |
 |---|---|---|---|
@@ -20,6 +20,21 @@
 | MetaGenSim | [Fig.1 · p.1](../assets/paper-screenshots/MetaGenSim-overview.jpg) | [Fig.2 · p.4](../assets/paper-screenshots/MetaGenSim-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2610.19479) |
 | Sim-and-Real Co-Training | [Fig.1 · p.1](../assets/paper-screenshots/CoTraining-overview.jpg) | [Fig.2 · p.4](../assets/paper-screenshots/CoTraining-architecture.jpg) | [论文原文](https://www.roboticsproceedings.org/rss21/p109.pdf) |
 
+| PhysX-3D | [Fig.1 · p.1](../assets/paper-screenshots/PhysX3D-overview.jpg) | [Fig.2 · p.4](../assets/paper-screenshots/PhysX3D-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2507.12465) |
+| PhysX-Anything | [Fig.1 · p.1](../assets/paper-screenshots/PhysXAnything-overview.jpg) | [Fig.2 · p.3](../assets/paper-screenshots/PhysXAnything-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2511.13648) |
+| Scalable Real2Sim | [Fig.1 · p.1](../assets/paper-screenshots/ScalableReal2Sim-overview.jpg) | [Fig.2 · p.3](../assets/paper-screenshots/ScalableReal2Sim-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2503.00370) |
+| Physics-Consistent Real2Sim | [Fig.1 · p.1](../assets/paper-screenshots/ClutteredReal2Sim-overview.jpg) | [Fig.2 · p.3](../assets/paper-screenshots/ClutteredReal2Sim-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2602.12633) |
+| Contact-Aware Neural Dynamics | [Fig.1 · p.1](../assets/paper-screenshots/ContactAwareDynamics-overview.jpg) | [Fig.2 · p.4](../assets/paper-screenshots/ContactAwareDynamics-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2601.12796) |
+| Few-Shot Neural Differentiable Simulator | [Fig.1 · p.1](../assets/paper-screenshots/FewShotDiffSim-overview.jpg) | [Fig.2 · p.2](../assets/paper-screenshots/FewShotDiffSim-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2603.06218) |
+| PhysTwin | [Fig.1 · p.1](../assets/paper-screenshots/PhysTwin-overview.jpg) | [Fig.2 · p.3](../assets/paper-screenshots/PhysTwin-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2503.17973) |
+| Alloy | [Fig.1 · p.2](../assets/paper-screenshots/Alloy-overview.jpg) | [Fig.2 · p.3](../assets/paper-screenshots/Alloy-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2611.16312) |
+| TactileLab | [Fig.1 · p.1](../assets/paper-screenshots/TactileLab-overview.jpg) | [Fig.2 · p.4](../assets/paper-screenshots/TactileLab-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2611.07881) |
+| TouchTwin | [Fig.1 · p.1](../assets/paper-screenshots/TouchTwin-overview.jpg) | [Fig.2 · p.2](../assets/paper-screenshots/TouchTwin-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2611.17619) |
+| RoboScape | [Fig.1 · p.3](../assets/paper-screenshots/RoboScape-overview.jpg) | [Fig.2 · p.4](../assets/paper-screenshots/RoboScape-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2506.23135) |
+| ABot-PhysWorld | [Fig.1 · p.3](../assets/paper-screenshots/ABotPhysWorld-overview.jpg) | [Fig.2 · p.4](../assets/paper-screenshots/ABotPhysWorld-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2603.23376) |
+| Principia | [Fig.1 · p.1](../assets/paper-screenshots/Principia-overview.jpg) | [Fig.2 · p.2](../assets/paper-screenshots/Principia-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2609.04200) |
+| PVBench | [Fig.1 · p.2](../assets/paper-screenshots/PVBench-overview.jpg) | [Fig.2 · p.4](../assets/paper-screenshots/PVBench-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2610.26711) |
+
 ## 图像来源与使用说明
 
 1. 截图源于作者原始 PDF 中对应 Figure；只截取、裁切和编码保存，不使用图像生成模型重新绘制。请引用作者论文。
@@ -28,5 +43,7 @@
 4. 自绘的中文流程图保存在 [assets/methods](../assets/methods/)，不同于原论文截图；另外一些历史作者网站图片仍在 `assets/paper-figures/`。
 5. **新加入的三篇论文**：TabletopGen Figure 1/2、EmbodiedGen V2 Figure 1/2、SimFoundry Figure 1/2 均依据 2026-11-19 上传的相应 PDF 选择并核对；EmbodiedGen V2 的 Figure 2 只覆盖其资产生成分支，不能当成全部世界生成系统的唯一架构图。
 6. **Real2Render2Real** 的 Figure 1 已展示数据生产全流程，Figure 2 属于数据生成效率与真实策略表现，未将其误称为“架构图”。
+
+第 6 章新增 14 篇论文的 Figure 1/2 均由 PDF 截取，包含来源页码和裁切记录；部分 Figure 2 可能是数据或结果图，而不是网络架构图，具体以原图标题为准。
 
 图片著作权归各论文的权利人所有；本仓库仅用于带出处的学术调研阅读。
