@@ -34,6 +34,20 @@ PAPERS = [
     ("SCIZOR", ["https://arxiv.org/pdf/2505.22626"], 1, 2),
     ("MetaGenSim", ["https://arxiv.org/pdf/2610.19479"], 1, 2),
     ("CoTraining", ["https://www.roboticsproceedings.org/rss21/p109.pdf"], 1, 2),
+    ("PhysX3D", ["https://arxiv.org/pdf/2507.12465"], 1, 2),
+    ("PhysXAnything", ["https://arxiv.org/pdf/2511.13648"], 1, 2),
+    ("ScalableReal2Sim", ["https://arxiv.org/pdf/2503.00370"], 1, 2),
+    ("ClutteredReal2Sim", ["https://arxiv.org/pdf/2602.12633"], 1, 2),
+    ("ContactAwareDynamics", ["https://arxiv.org/pdf/2601.12796"], 1, 2),
+    ("FewShotDiffSim", ["https://arxiv.org/pdf/2603.06218"], 1, 2),
+    ("PhysTwin", ["https://arxiv.org/pdf/2503.17973"], 1, 2),
+    ("Alloy", ["https://arxiv.org/pdf/2611.16312"], 1, 2),
+    ("TactileLab", ["https://arxiv.org/pdf/2611.07881"], 1, 2),
+    ("TouchTwin", ["https://arxiv.org/pdf/2611.17619"], 1, 2),
+    ("RoboScape", ["https://arxiv.org/pdf/2506.23135"], 1, 2),
+    ("ABotPhysWorld", ["https://arxiv.org/pdf/2603.23376"], 1, 2),
+    ("Principia", ["https://arxiv.org/pdf/2609.04200"], 1, 2),
+    ("PVBench", ["https://arxiv.org/pdf/2610.26711"], 1, 2),
 ]
 # Manual, PDF-point crop rectangles for papers with image-only captions and
 # layouts where Figure 1 spans both columns despite a narrow caption line.
@@ -220,7 +234,7 @@ def main():
             print(f"  FAILURE {str(e)[:250]}", flush=True)
     (DEST/"manifest.json").write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     total=sum(len(x["screenshots"]) for x in manifest["papers"].values())
-    print(f"FINISHED: {total}/30 original screenshots, {len(manifest['failures'])} warnings", flush=True)
+    print(f"FINISHED: {total}/{2*len(PAPERS)} original screenshots, {len(manifest['failures'])} warnings", flush=True)
     if total < 30:
         raise SystemExit("Fewer than 30 actual screenshots extracted. Manual review needed.")
 if __name__=="__main__":
