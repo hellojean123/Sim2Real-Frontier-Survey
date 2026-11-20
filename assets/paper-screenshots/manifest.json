@@ -564,7 +564,474 @@
           ]
         }
       }
+    },
+    "PhysX3D": {
+      "pdf": "https://arxiv.org/pdf/2507.12465",
+      "available_figure_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/PhysX3D-overview.jpg",
+          "page": 1,
+          "figure": 1,
+          "caption": "Figure 1: Visualizations of our PhysXNet for phsycial 3D generation. 3D assets in our dataset have",
+          "crop_pdf_points": [
+            25.0,
+            207.3,
+            587.0,
+            497.2
+          ]
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/PhysX3D-architecture.jpg",
+          "page": 4,
+          "figure": 2,
+          "caption": "Figure 2: Top: Definition of properties in PhysXNet . By defining and annotating properties across",
+          "crop_pdf_points": [
+            25.0,
+            32.0,
+            587.0,
+            291.4
+          ]
+        }
+      }
+    },
+    "PhysXAnything": {
+      "pdf": "https://arxiv.org/pdf/2511.13648",
+      "available_figure_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/PhysXAnything-overview.jpg",
+          "page": 1,
+          "figure": 1,
+          "caption": "Figure 1. Given a single real-world image, PhysX-Anything generates a detailed physical 3D object, recovering both its articulation",
+          "crop_pdf_points": [
+            25.0,
+            186.8,
+            587.0,
+            500.1
+          ]
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/PhysXAnything-architecture.jpg",
+          "page": 3,
+          "figure": 2,
+          "caption": "Figure 2. Overview of PhysX-Anything . PhysX-Anything conducts a multi-round conversation to produce a physical representation",
+          "crop_pdf_points": [
+            25.0,
+            163.6,
+            587.0,
+            452.6
+          ]
+        }
+      }
+    },
+    "ScalableReal2Sim": {
+      "pdf": "https://arxiv.org/pdf/2503.00370",
+      "available_figure_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/ScalableReal2Sim-overview.jpg",
+          "page": 1,
+          "figure": 1,
+          "caption": "Fig. 1: An overview of our system. Objects are placed in the first bin, where the robot picks them up and reconstructs their",
+          "crop_pdf_points": [
+            25.0,
+            105.0,
+            587.0,
+            366.2
+          ]
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/ScalableReal2Sim-architecture.jpg",
+          "page": 3,
+          "figure": 2,
+          "caption": "Fig. 2: Our object scanning method. We use re-grasps to",
+          "crop_pdf_points": [
+            25.0,
+            32.0,
+            587.0,
+            154.4
+          ]
+        }
+      }
+    },
+    "ClutteredReal2Sim": {
+      "pdf": "https://arxiv.org/pdf/2602.12633",
+      "available_figure_numbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/ClutteredReal2Sim-overview.jpg",
+          "page": 1,
+          "figure": 1,
+          "caption": "Fig. 1.",
+          "crop_pdf_points": [
+            25.0,
+            151.4,
+            587.0,
+            439.4
+          ]
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/ClutteredReal2Sim-architecture.jpg",
+          "page": 3,
+          "figure": 2,
+          "caption": "Fig. 2. Overview of our method. Our physics-constrained Real2Sim pipeline consists of four stages. (a) Initial Reconstruction: Given a single RGB-D",
+          "crop_pdf_points": [
+            25.0,
+            95.7,
+            587.0,
+            383.7
+          ]
+        }
+      }
+    },
+    "ContactAwareDynamics": {
+      "pdf": "https://arxiv.org/pdf/2601.12796",
+      "available_figure_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/ContactAwareDynamics-overview.jpg",
+          "page": 1,
+          "figure": 1,
+          "caption": "Figure 1. We present an implicit sim-to-real alignment framework for robot manipulation that uses contact information from tactile sensors.",
+          "crop_pdf_points": [
+            25.0,
+            105.0,
+            587.0,
+            366.3
+          ]
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/ContactAwareDynamics-architecture.jpg",
+          "page": 4,
+          "figure": 2,
+          "caption": "Figure 2. Overview of the proposed contact-aware neural dynamics framework. The model takes as input a multimodal history",
+          "crop_pdf_points": [
+            25.0,
+            32.0,
+            587.0,
+            293.1
+          ]
+        }
+      }
+    },
+    "FewShotDiffSim": {
+      "pdf": "https://arxiv.org/pdf/2603.06218",
+      "available_figure_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/FewShotDiffSim-overview.jpg",
+          "page": 1,
+          "figure": 1,
+          "caption": "Fig. 1: Top: A blue cube is pushed to collide with a green",
+          "crop_pdf_points": [
+            25.0,
+            109.0,
+            587.0,
+            399.1
+          ]
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/FewShotDiffSim-architecture.jpg",
+          "page": 2,
+          "figure": 2,
+          "caption": "Figure 2. We begin by identifying key contact parameters that",
+          "crop_pdf_points": [
+            25.0,
+            32.0,
+            587.0,
+            238.3
+          ]
+        }
+      }
+    },
+    "PhysTwin": {
+      "pdf": "https://arxiv.org/pdf/2503.17973",
+      "available_figure_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/PhysTwin-overview.jpg",
+          "page": 1,
+          "figure": 1,
+          "caption": "Figure 1. PhysTwin takes sparse videos (three camera views) of deformable objects under interaction as input and reconstructs a simulatable",
+          "crop_pdf_points": [
+            25.0,
+            105.0,
+            587.0,
+            388.6
+          ]
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/PhysTwin-architecture.jpg",
+          "page": 3,
+          "figure": 2,
+          "caption": "Figure 2. Overview of Our PhysTwin Framework. We present an overview of our PhysTwin framework, where the core representation",
+          "crop_pdf_points": [
+            25.0,
+            30.0,
+            587.0,
+            290.0
+          ]
+        }
+      }
+    },
+    "Alloy": {
+      "pdf": "https://arxiv.org/pdf/2611.16312",
+      "available_figure_numbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/Alloy-overview.jpg",
+          "page": 2,
+          "figure": 1,
+          "caption": "Figure 1: Scenes simulated in Alloy. (a) A Franka arm pours water from a bottle into a glass; the",
+          "crop_pdf_points": [
+            25.0,
+            99.9,
+            570.3,
+            389.9
+          ]
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/Alloy-architecture.jpg",
+          "page": 3,
+          "figure": 2,
+          "caption": "Figure 2: How a scene becomes a simulation. Each object is routed to one solver. When a scene uses",
+          "crop_pdf_points": [
+            25.0,
+            32.0,
+            570.3,
+            270.3
+          ]
+        }
+      }
+    },
+    "TactileLab": {
+      "pdf": "https://arxiv.org/pdf/2611.07881",
+      "available_figure_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/TactileLab-overview.jpg",
+          "page": 1,
+          "figure": 1,
+          "caption": "Figure 1: TactileLab is an end-to-end framework for efficient, shear-sensitive tactile robot learning. Built on IsaacLab, it integrates GPU-",
+          "crop_pdf_points": [
+            25.0,
+            105.0,
+            587.0,
+            363.6
+          ]
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/TactileLab-architecture.jpg",
+          "page": 4,
+          "figure": 2,
+          "caption": "Figure 2: Overview of the TactileLab simulation framework and simulated tactile-flow computation. The rigid-body simulation pipeline",
+          "crop_pdf_points": [
+            25.0,
+            59.8,
+            587.0,
+            349.7
+          ]
+        }
+      }
+    },
+    "TouchTwin": {
+      "pdf": "https://arxiv.org/pdf/2611.17619",
+      "available_figure_numbers": [],
+      "screenshots": {}
+    },
+    "RoboScape": {
+      "pdf": "https://arxiv.org/pdf/2506.23135",
+      "available_figure_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/RoboScape-overview.jpg",
+          "page": 3,
+          "figure": 1,
+          "caption": "Figure 1: Illustration of the proposed robotic data processing pipeline with physical priors annotation.",
+          "crop_pdf_points": [
+            25.0,
+            32.0,
+            587.0,
+            195.4
+          ]
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/RoboScape-architecture.jpg",
+          "page": 4,
+          "figure": 2,
+          "caption": "Figure 2: Overview of the physics-informed world model, where physical knowledge is integrated",
+          "crop_pdf_points": [
+            25.0,
+            40.3,
+            587.0,
+            330.4
+          ]
+        }
+      }
+    },
+    "ABotPhysWorld": {
+      "pdf": "https://arxiv.org/pdf/2603.23376",
+      "available_figure_numbers": [],
+      "screenshots": {}
+    },
+    "Principia": {
+      "pdf": "https://arxiv.org/pdf/2609.04200",
+      "available_figure_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/Principia-overview.jpg",
+          "page": 1,
+          "figure": 1,
+          "caption": "Figure 1: Principia tests physical reasoning in video models through paired-object relational tests.",
+          "crop_pdf_points": [
+            25.0,
+            160.4,
+            587.0,
+            450.5
+          ]
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/Principia-architecture.jpg",
+          "page": 2,
+          "figure": 2,
+          "caption": "Figure 2: (a) A generated video of a single block sliding down an incline, shown at three timesteps",
+          "crop_pdf_points": [
+            25.0,
+            32.0,
+            587.0,
+            266.6
+          ]
+        }
+      }
+    },
+    "PVBench": {
+      "pdf": "https://arxiv.org/pdf/2610.26711",
+      "available_figure_numbers": [],
+      "screenshots": {}
     }
   },
-  "failures": []
+  "failures": [
+    {
+      "paper": "TouchTwin",
+      "kind": "overview",
+      "error": "caption not located"
+    },
+    {
+      "paper": "TouchTwin",
+      "kind": "architecture",
+      "error": "caption not located"
+    },
+    {
+      "paper": "ABotPhysWorld",
+      "kind": "overview",
+      "error": "caption not located"
+    },
+    {
+      "paper": "ABotPhysWorld",
+      "kind": "architecture",
+      "error": "caption not located"
+    },
+    {
+      "paper": "PVBench",
+      "kind": "overview",
+      "error": "caption not located"
+    },
+    {
+      "paper": "PVBench",
+      "kind": "architecture",
+      "error": "caption not located"
+    }
+  ]
 }
