@@ -52,6 +52,10 @@ PAPERS = [
 # Manual, PDF-point crop rectangles for papers with image-only captions and
 # layouts where Figure 1 spans both columns despite a narrow caption line.
 MANUAL_CROPS = {
+    "TouchTwin": {
+        "overview": (0, [66, 435, 544, 620], 1, "Figure 1: TouchTwin overview; human touch grounded physics replay"),
+        "architecture": (1, [61, 400, 541, 553], 2, "Figure 2: Fitting a tactile hand and 880 taxel contact"),
+    },
     # These page/figure rectangles were verified against the three PDFs
     # supplied on 2026-11-19. Coordinates are in PDF points (zero-based page).
     "TabletopGen": {
@@ -84,7 +88,7 @@ MANUAL_CROPS = {
         "architecture": (3, [44, 47, 574, 280], 2, "Fig. 2: Method overview: task-aware digital cousins and sim-real policy co-training"),
     },
 }
-REFRESH = set()  # Keep prior verified screenshots unchanged when adding papers
+REFRESH = {"TouchTwin", "PVBench", "ABotPhysWorld"}  # Keep prior verified screenshots unchanged when adding papers
 
 FIG_RE = re.compile(r"^\s*(?:fig\.?|figure)\s*(\d+)\s*[:.\-\u2014]", re.IGNORECASE)
 SESSION = requests.Session()
@@ -206,6 +210,12 @@ def main():
         try:
             raw, paperurl = download_pdf(urls)
             doc = fitz.open(stream=raw, filetype="pdf")
+            if slug in ("PVBench", "ABotPhysWorld"):
+                for k in range(min(4,len(doc))):
+                    pg=doc[k]
+                    pix=pg.get_pixmap(matrix=fitz.Matrix(1.0,1.0),alpha=False)
+                    Image.frombytes("RGB",(pix.width,pix.height),pix.samples).save(
+                        DEST/f"{slug}-debug-p{k+1}.jpg","JPEG",quality=74,optimize=True)
             found = scan_captions(doc)
             group = {"pdf": paperurl, "available_figure_numbers": sorted(set(c["figure"] for c in found)),
                      "screenshots": {}}
