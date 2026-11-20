@@ -914,7 +914,32 @@
     "TouchTwin": {
       "pdf": "https://arxiv.org/pdf/2611.17619",
       "available_figure_numbers": [],
-      "screenshots": {}
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/TouchTwin-overview.jpg",
+          "page": 1,
+          "figure": 1,
+          "caption": "Figure 1: TouchTwin overview; human touch grounded physics replay",
+          "crop_pdf_points": [
+            66.0,
+            435.0,
+            544.0,
+            620.0
+          ]
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/TouchTwin-architecture.jpg",
+          "page": 2,
+          "figure": 2,
+          "caption": "Figure 2: Fitting a tactile hand and 880 taxel contact",
+          "crop_pdf_points": [
+            61.0,
+            400.0,
+            541.0,
+            553.0
+          ]
+        }
+      }
     },
     "RoboScape": {
       "pdf": "https://arxiv.org/pdf/2506.23135",
@@ -1003,16 +1028,6 @@
     }
   },
   "failures": [
-    {
-      "paper": "TouchTwin",
-      "kind": "overview",
-      "error": "caption not located"
-    },
-    {
-      "paper": "TouchTwin",
-      "kind": "architecture",
-      "error": "caption not located"
-    },
     {
       "paper": "ABotPhysWorld",
       "kind": "overview",
