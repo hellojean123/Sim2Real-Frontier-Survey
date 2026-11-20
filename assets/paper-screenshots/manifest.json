@@ -24,9 +24,9 @@
           "figure": 1,
           "caption": "Fig. 1: GSWorld leverages 3DGS reconstruction to render photo-realistic robot scenes, supports multiple policy learning",
           "crop_pdf_points": [
-            25.0,
+            25,
             177.7,
-            587.0,
+            587,
             467.7
           ]
         },
@@ -36,9 +36,9 @@
           "figure": 2,
           "caption": "Fig. 2: GSWorld provides an interface on top of existing simulators to render photorealistic assets. Our GSDF assets are",
           "crop_pdf_points": [
-            25.0,
-            32.0,
-            587.0,
+            25,
+            32,
+            587,
             242.2
           ]
         }
@@ -60,10 +60,10 @@
           "figure": 1,
           "caption": "Fig. 1: Illustration of RE3SIM. a) RE3SIM allows zero-shot policy transfer on various tasks. b) The system pipeline to",
           "crop_pdf_points": [
-            25.0,
+            25,
             130.5,
-            587.0,
-            422.0
+            587,
+            422
           ]
         },
         "architecture": {
@@ -72,9 +72,9 @@
           "figure": 2,
           "caption": "Fig. 2: Illustration of the proposed real-to-sim-to-real system, RE3SIM. It leverages 3D reconstruction and a physics-based",
           "crop_pdf_points": [
-            25.0,
-            55.0,
-            587.0,
+            25,
+            55,
+            587,
             346.3
           ]
         }
@@ -107,9 +107,9 @@
           "figure": 1,
           "caption": "Fig. 1: Overview. From simulation trajectories (Left), RoboRender generates diverse and photorealistic videos oriented for",
           "crop_pdf_points": [
-            25.0,
+            25,
             144.3,
-            587.0,
+            587,
             434.3
           ]
         },
@@ -119,9 +119,9 @@
           "figure": 2,
           "caption": "Fig. 2: RoboRender video generation model. During training, raw RGB videos are VAE-encoded and noised to form the",
           "crop_pdf_points": [
-            25.0,
-            32.0,
-            587.0,
+            25,
+            32,
+            587,
             266.7
           ]
         }
@@ -145,10 +145,10 @@
           "figure": 1,
           "caption": "Fig. 1: Tabletop interactive scene, scene expansion and data synthesis",
           "crop_pdf_points": [
-            125.0,
-            108.0,
-            490.0,
-            375.0
+            125,
+            108,
+            490,
+            375
           ]
         },
         "architecture": {
@@ -157,10 +157,10 @@
           "figure": 2,
           "caption": "Fig. 2: Generative instance extraction, DRO/TSA alignment and interactive simulation",
           "crop_pdf_points": [
-            130.0,
-            105.0,
-            495.0,
-            414.0
+            130,
+            105,
+            495,
+            414
           ]
         }
       }
@@ -185,10 +185,10 @@
           "figure": 1,
           "caption": "Figure 1: Task-driven, large-scale and Vibe Coding 3D worlds",
           "crop_pdf_points": [
-            70.0,
-            305.0,
-            548.0,
-            736.0
+            70,
+            305,
+            548,
+            736
           ]
         },
         "architecture": {
@@ -197,10 +197,10 @@
           "figure": 2,
           "caption": "Figure 2: Sim-ready asset-generation and cross-simulator export",
           "crop_pdf_points": [
-            70.0,
-            67.0,
-            539.0,
-            502.0
+            70,
+            67,
+            539,
+            502
           ]
         }
       }
@@ -221,10 +221,10 @@
           "figure": 1,
           "caption": "Figure 1: Real-to-sim digital twin and object/scene/task cousins",
           "crop_pdf_points": [
-            65.0,
-            225.0,
-            532.0,
-            506.0
+            65,
+            225,
+            532,
+            506
           ]
         },
         "architecture": {
@@ -233,10 +233,10 @@
           "figure": 2,
           "caption": "Figure 2: Extraction, scene generation and cousin augmentations",
           "crop_pdf_points": [
-            58.0,
-            80.0,
-            541.0,
-            466.0
+            58,
+            80,
+            541,
+            466
           ]
         }
       }
@@ -260,9 +260,9 @@
           "figure": 1,
           "caption": "Fig. 1: Illustration of our approach, SPARR. (a) A specialist policy is pre-trained in simulation. (b) The simulation policy is deployed",
           "crop_pdf_points": [
-            25.0,
-            105.0,
-            587.0,
+            25,
+            105,
+            587,
             285.3
           ]
         },
@@ -272,44 +272,10 @@
           "figure": 3,
           "caption": "Fig. 3: Asymmetric base and residual policy combination",
           "crop_pdf_points": [
-            48.0,
-            51.0,
-            308.0,
-            228.0
-          ]
-        }
-      }
-    },
-    "SoMA": {
-      "pdf": "https://raw.githubusercontent.com/mlresearch/v306/main/assets/huang26bh/huang26bh.pdf",
-      "available_figure_numbers": [
-        1,
-        2,
-        3
-      ],
-      "screenshots": {
-        "overview": {
-          "path": "assets/paper-screenshots/SoMA-overview.jpg",
-          "page": 1,
-          "figure": 1,
-          "caption": "Figure 1. SoMA is a GS neural simulator that reconstructs and simulates deformable object dynamics from real-world robot manipulation.",
-          "crop_pdf_points": [
-            25.0,
-            121.2,
-            587.0,
-            410.2
-          ]
-        },
-        "architecture": {
-          "path": "assets/paper-screenshots/SoMA-architecture.jpg",
-          "page": 3,
-          "figure": 2,
-          "caption": "Figure 2. Framework of SoMA. SoMA takes RGB observations and robot joint-space actions collected from real-world manipulation as",
-          "crop_pdf_points": [
-            25.0,
-            32.0,
-            587.0,
-            263.2
+            48,
+            51,
+            308,
+            228
           ]
         }
       }
@@ -324,10 +290,10 @@
           "figure": 1,
           "caption": "Fig. 1: PIN-WM learning and physical digital cousins",
           "crop_pdf_points": [
-            305.0,
-            195.0,
-            575.0,
-            403.0
+            305,
+            195,
+            575,
+            403
           ]
         },
         "architecture": {
@@ -336,10 +302,10 @@
           "figure": 2,
           "caption": "Fig. 2: Physics-informed Real2Sim2Real framework",
           "crop_pdf_points": [
-            42.0,
-            54.0,
-            570.0,
-            353.0
+            42,
+            54,
+            570,
+            353
           ]
         }
       }
@@ -363,10 +329,10 @@
           "figure": 1,
           "caption": "Figure 1. RoboTwin 2.0 uses an MLLM-driven pipeline for automatic data synthesis and domain randomization to boost policy",
           "crop_pdf_points": [
-            25.0,
-            32.0,
-            587.0,
-            244.0
+            25,
+            32,
+            587,
+            244
           ]
         },
         "architecture": {
@@ -375,9 +341,9 @@
           "figure": 2,
           "caption": "Figure 2. Expert data generation pipeline. Task-level code is generated by a Code Agent and iteratively validated in simulation, where",
           "crop_pdf_points": [
-            25.0,
-            32.0,
-            587.0,
+            25,
+            32,
+            587,
             247.1
           ]
         }
@@ -400,9 +366,9 @@
           "figure": 1,
           "caption": "Fig. 1: RoboDream generates robot demonstrations with novel objects, in novel scenes, from novel views via compositional",
           "crop_pdf_points": [
-            25.0,
+            25,
             110.2,
-            587.0,
+            587,
             400.2
           ]
         },
@@ -412,9 +378,9 @@
           "figure": 2,
           "caption": "Fig. 2: The RoboDream architecture. The model generates a video o1:T conditioned on multiple inputs: a rendered robot-only",
           "crop_pdf_points": [
-            25.0,
-            32.0,
-            587.0,
+            25,
+            32,
+            587,
             301.9
           ]
         }
@@ -439,9 +405,9 @@
           "figure": 1,
           "caption": "Figure 1: Real2Render2Real generating robot training data for the task of “Put the Mug on the Coffee Maker”.",
           "crop_pdf_points": [
-            25.0,
-            32.0,
-            587.0,
+            25,
+            32,
+            587,
             257.8
           ]
         },
@@ -451,9 +417,9 @@
           "figure": 2,
           "caption": "Figure 2: Data Generation Efficiency and Average Policy Performance Across Manipulation Tasks.",
           "crop_pdf_points": [
-            25.0,
-            32.0,
-            587.0,
+            25,
+            32,
+            587,
             238.4
           ]
         }
@@ -476,9 +442,9 @@
           "figure": 1,
           "caption": "Figure 1: SCIZOR overview. Each trajectory from the original robotic datasets is simultaneously",
           "crop_pdf_points": [
-            25.0,
-            32.0,
-            587.0,
+            25,
+            32,
+            587,
             243.2
           ]
         },
@@ -488,10 +454,10 @@
           "figure": 2,
           "caption": "Figure 2: SCIZOR architecture for suboptimal-transition removal and deduplication",
           "crop_pdf_points": [
-            52.0,
-            64.0,
-            561.0,
-            303.0
+            52,
+            64,
+            561,
+            303
           ]
         }
       }
@@ -515,10 +481,10 @@
           "figure": 1,
           "caption": "Figure 1: Active Generative Simulation overview",
           "crop_pdf_points": [
-            32.0,
-            341.0,
-            585.0,
-            615.0
+            32,
+            341,
+            585,
+            615
           ]
         },
         "architecture": {
@@ -527,9 +493,9 @@
           "figure": 2,
           "caption": "Figure 2: MetaGenSim. We propose a meta-learning framework for Active Generative Simulation with three",
           "crop_pdf_points": [
-            25.0,
-            32.0,
-            587.0,
+            25,
+            32,
+            587,
             219.3
           ]
         }
@@ -545,10 +511,10 @@
           "figure": 1,
           "caption": "Fig. 1: Sim-and-Real Co-Training overview",
           "crop_pdf_points": [
-            305.0,
-            190.0,
-            577.0,
-            590.0
+            305,
+            190,
+            577,
+            590
           ]
         },
         "architecture": {
@@ -557,10 +523,10 @@
           "figure": 2,
           "caption": "Fig. 2: Method overview: task-aware digital cousins and sim-real policy co-training",
           "crop_pdf_points": [
-            44.0,
-            47.0,
-            574.0,
-            280.0
+            44,
+            47,
+            574,
+            280
           ]
         }
       }
@@ -585,9 +551,9 @@
           "figure": 1,
           "caption": "Figure 1: Visualizations of our PhysXNet for phsycial 3D generation. 3D assets in our dataset have",
           "crop_pdf_points": [
-            25.0,
+            25,
             207.3,
-            587.0,
+            587,
             497.2
           ]
         },
@@ -597,9 +563,9 @@
           "figure": 2,
           "caption": "Figure 2: Top: Definition of properties in PhysXNet . By defining and annotating properties across",
           "crop_pdf_points": [
-            25.0,
-            32.0,
-            587.0,
+            25,
+            32,
+            587,
             291.4
           ]
         }
@@ -624,9 +590,9 @@
           "figure": 1,
           "caption": "Figure 1. Given a single real-world image, PhysX-Anything generates a detailed physical 3D object, recovering both its articulation",
           "crop_pdf_points": [
-            25.0,
+            25,
             186.8,
-            587.0,
+            587,
             500.1
           ]
         },
@@ -636,9 +602,9 @@
           "figure": 2,
           "caption": "Figure 2. Overview of PhysX-Anything . PhysX-Anything conducts a multi-round conversation to produce a physical representation",
           "crop_pdf_points": [
-            25.0,
+            25,
             163.6,
-            587.0,
+            587,
             452.6
           ]
         }
@@ -663,9 +629,9 @@
           "figure": 1,
           "caption": "Fig. 1: An overview of our system. Objects are placed in the first bin, where the robot picks them up and reconstructs their",
           "crop_pdf_points": [
-            25.0,
-            105.0,
-            587.0,
+            25,
+            105,
+            587,
             366.2
           ]
         },
@@ -675,9 +641,9 @@
           "figure": 2,
           "caption": "Fig. 2: Our object scanning method. We use re-grasps to",
           "crop_pdf_points": [
-            25.0,
-            32.0,
-            587.0,
+            25,
+            32,
+            587,
             154.4
           ]
         }
@@ -698,9 +664,9 @@
           "figure": 1,
           "caption": "Fig. 1.",
           "crop_pdf_points": [
-            25.0,
+            25,
             151.4,
-            587.0,
+            587,
             439.4
           ]
         },
@@ -710,203 +676,10 @@
           "figure": 2,
           "caption": "Fig. 2. Overview of our method. Our physics-constrained Real2Sim pipeline consists of four stages. (a) Initial Reconstruction: Given a single RGB-D",
           "crop_pdf_points": [
-            25.0,
+            25,
             95.7,
-            587.0,
+            587,
             383.7
-          ]
-        }
-      }
-    },
-    "ContactAwareDynamics": {
-      "pdf": "https://arxiv.org/pdf/2601.12796",
-      "available_figure_numbers": [
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "screenshots": {
-        "overview": {
-          "path": "assets/paper-screenshots/ContactAwareDynamics-overview.jpg",
-          "page": 1,
-          "figure": 1,
-          "caption": "Figure 1. We present an implicit sim-to-real alignment framework for robot manipulation that uses contact information from tactile sensors.",
-          "crop_pdf_points": [
-            25.0,
-            105.0,
-            587.0,
-            366.3
-          ]
-        },
-        "architecture": {
-          "path": "assets/paper-screenshots/ContactAwareDynamics-architecture.jpg",
-          "page": 4,
-          "figure": 2,
-          "caption": "Figure 2. Overview of the proposed contact-aware neural dynamics framework. The model takes as input a multimodal history",
-          "crop_pdf_points": [
-            25.0,
-            32.0,
-            587.0,
-            293.1
-          ]
-        }
-      }
-    },
-    "FewShotDiffSim": {
-      "pdf": "https://arxiv.org/pdf/2603.06218",
-      "available_figure_numbers": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7
-      ],
-      "screenshots": {
-        "overview": {
-          "path": "assets/paper-screenshots/FewShotDiffSim-overview.jpg",
-          "page": 1,
-          "figure": 1,
-          "caption": "Fig. 1: Top: A blue cube is pushed to collide with a green",
-          "crop_pdf_points": [
-            25.0,
-            109.0,
-            587.0,
-            399.1
-          ]
-        },
-        "architecture": {
-          "path": "assets/paper-screenshots/FewShotDiffSim-architecture.jpg",
-          "page": 2,
-          "figure": 2,
-          "caption": "Figure 2. We begin by identifying key contact parameters that",
-          "crop_pdf_points": [
-            25.0,
-            32.0,
-            587.0,
-            238.3
-          ]
-        }
-      }
-    },
-    "PhysTwin": {
-      "pdf": "https://arxiv.org/pdf/2503.17973",
-      "available_figure_numbers": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9
-      ],
-      "screenshots": {
-        "overview": {
-          "path": "assets/paper-screenshots/PhysTwin-overview.jpg",
-          "page": 1,
-          "figure": 1,
-          "caption": "Figure 1. PhysTwin takes sparse videos (three camera views) of deformable objects under interaction as input and reconstructs a simulatable",
-          "crop_pdf_points": [
-            25.0,
-            105.0,
-            587.0,
-            388.6
-          ]
-        },
-        "architecture": {
-          "path": "assets/paper-screenshots/PhysTwin-architecture.jpg",
-          "page": 3,
-          "figure": 2,
-          "caption": "Figure 2. Overview of Our PhysTwin Framework. We present an overview of our PhysTwin framework, where the core representation",
-          "crop_pdf_points": [
-            25.0,
-            30.0,
-            587.0,
-            290.0
-          ]
-        }
-      }
-    },
-    "Alloy": {
-      "pdf": "https://arxiv.org/pdf/2611.16312",
-      "available_figure_numbers": [
-        1,
-        2,
-        3,
-        4
-      ],
-      "screenshots": {
-        "overview": {
-          "path": "assets/paper-screenshots/Alloy-overview.jpg",
-          "page": 2,
-          "figure": 1,
-          "caption": "Figure 1: Scenes simulated in Alloy. (a) A Franka arm pours water from a bottle into a glass; the",
-          "crop_pdf_points": [
-            25.0,
-            99.9,
-            570.3,
-            389.9
-          ]
-        },
-        "architecture": {
-          "path": "assets/paper-screenshots/Alloy-architecture.jpg",
-          "page": 3,
-          "figure": 2,
-          "caption": "Figure 2: How a scene becomes a simulation. Each object is routed to one solver. When a scene uses",
-          "crop_pdf_points": [
-            25.0,
-            32.0,
-            570.3,
-            270.3
-          ]
-        }
-      }
-    },
-    "TactileLab": {
-      "pdf": "https://arxiv.org/pdf/2611.07881",
-      "available_figure_numbers": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13
-      ],
-      "screenshots": {
-        "overview": {
-          "path": "assets/paper-screenshots/TactileLab-overview.jpg",
-          "page": 1,
-          "figure": 1,
-          "caption": "Figure 1: TactileLab is an end-to-end framework for efficient, shear-sensitive tactile robot learning. Built on IsaacLab, it integrates GPU-",
-          "crop_pdf_points": [
-            25.0,
-            105.0,
-            587.0,
-            363.6
-          ]
-        },
-        "architecture": {
-          "path": "assets/paper-screenshots/TactileLab-architecture.jpg",
-          "page": 4,
-          "figure": 2,
-          "caption": "Figure 2: Overview of the TactileLab simulation framework and simulated tactile-flow computation. The rigid-body simulation pipeline",
-          "crop_pdf_points": [
-            25.0,
-            59.8,
-            587.0,
-            349.7
           ]
         }
       }
@@ -921,10 +694,10 @@
           "figure": 1,
           "caption": "Figure 1: TouchTwin overview; human touch grounded physics replay",
           "crop_pdf_points": [
-            66.0,
-            435.0,
-            544.0,
-            620.0
+            66,
+            435,
+            544,
+            620
           ]
         },
         "architecture": {
@@ -933,10 +706,10 @@
           "figure": 2,
           "caption": "Figure 2: Fitting a tactile hand and 880 taxel contact",
           "crop_pdf_points": [
-            61.0,
-            400.0,
-            541.0,
-            553.0
+            61,
+            400,
+            541,
+            553
           ]
         }
       }
@@ -959,9 +732,9 @@
           "figure": 1,
           "caption": "Figure 1: Illustration of the proposed robotic data processing pipeline with physical priors annotation.",
           "crop_pdf_points": [
-            25.0,
-            32.0,
-            587.0,
+            25,
+            32,
+            587,
             195.4
           ]
         },
@@ -971,9 +744,9 @@
           "figure": 2,
           "caption": "Figure 2: Overview of the physics-informed world model, where physical knowledge is integrated",
           "crop_pdf_points": [
-            25.0,
+            25,
             40.3,
-            587.0,
+            587,
             330.4
           ]
         }
@@ -989,10 +762,10 @@
           "figure": 1,
           "caption": "Figure 1: Data creation and training pipeline",
           "crop_pdf_points": [
-            65.0,
-            421.0,
-            545.0,
-            636.0
+            65,
+            421,
+            545,
+            636
           ]
         },
         "architecture": {
@@ -1001,77 +774,10 @@
           "figure": 2,
           "caption": "Figure 2: Two-stage training pipeline",
           "crop_pdf_points": [
-            65.0,
-            60.0,
-            545.0,
-            330.0
-          ]
-        }
-      }
-    },
-    "Principia": {
-      "pdf": "https://arxiv.org/pdf/2609.04200",
-      "available_figure_numbers": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "screenshots": {
-        "overview": {
-          "path": "assets/paper-screenshots/Principia-overview.jpg",
-          "page": 1,
-          "figure": 1,
-          "caption": "Figure 1: Principia tests physical reasoning in video models through paired-object relational tests.",
-          "crop_pdf_points": [
-            25.0,
-            160.4,
-            587.0,
-            450.5
-          ]
-        },
-        "architecture": {
-          "path": "assets/paper-screenshots/Principia-architecture.jpg",
-          "page": 2,
-          "figure": 2,
-          "caption": "Figure 2: (a) A generated video of a single block sliding down an incline, shown at three timesteps",
-          "crop_pdf_points": [
-            25.0,
-            32.0,
-            587.0,
-            266.6
-          ]
-        }
-      }
-    },
-    "PVBench": {
-      "pdf": "https://arxiv.org/pdf/2610.26711",
-      "available_figure_numbers": [],
-      "screenshots": {
-        "overview": {
-          "path": "assets/paper-screenshots/PVBench-overview.jpg",
-          "page": 2,
-          "figure": 1,
-          "caption": "Figure 1: Overview and categories of PVBench",
-          "crop_pdf_points": [
-            65.0,
-            393.0,
-            545.0,
-            662.0
-          ]
-        },
-        "architecture": {
-          "path": "assets/paper-screenshots/PVBench-architecture.jpg",
-          "page": 4,
-          "figure": 2,
-          "caption": "Figure 2: PVBench prompt and evaluation data curation",
-          "crop_pdf_points": [
-            65.0,
-            205.0,
-            545.0,
-            443.0
+            65,
+            60,
+            545,
+            330
           ]
         }
       }

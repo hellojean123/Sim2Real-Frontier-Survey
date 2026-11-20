@@ -25,7 +25,6 @@ PAPERS = [
     ("EmbodiedGenV2", ["https://arxiv.org/pdf/2607.07459v3", "https://arxiv.org/pdf/2607.07459"], 1, 2),
     ("SimFoundry", ["https://arxiv.org/pdf/2606.28276v4", "https://arxiv.org/pdf/2606.28276"], 1, 2),
     ("SPARR", ["https://arxiv.org/pdf/2602.23253"], 1, 3),
-    ("SoMA", ["https://raw.githubusercontent.com/mlresearch/v306/main/assets/huang26bh/huang26bh.pdf"], 1, 2),
     ("PIN-WM", ["https://www.roboticsproceedings.org/rss21/p153.pdf"], 1, 2),
     ("RoboTwin", ["https://raw.githubusercontent.com/mlresearch/v306/main/assets/chen26j/chen26j.pdf",
                  "https://robotwin-platform.github.io/paper.pdf"], 1, 2),
@@ -38,16 +37,9 @@ PAPERS = [
     ("PhysXAnything", ["https://arxiv.org/pdf/2511.13648"], 1, 2),
     ("ScalableReal2Sim", ["https://arxiv.org/pdf/2503.00370"], 1, 2),
     ("ClutteredReal2Sim", ["https://arxiv.org/pdf/2602.12633"], 1, 2),
-    ("ContactAwareDynamics", ["https://arxiv.org/pdf/2601.12796"], 1, 2),
-    ("FewShotDiffSim", ["https://arxiv.org/pdf/2603.06218"], 1, 2),
-    ("PhysTwin", ["https://arxiv.org/pdf/2503.17973"], 1, 2),
-    ("Alloy", ["https://arxiv.org/pdf/2611.16312"], 1, 2),
-    ("TactileLab", ["https://arxiv.org/pdf/2611.07881"], 1, 2),
     ("TouchTwin", ["https://arxiv.org/pdf/2611.17619"], 1, 2),
     ("RoboScape", ["https://arxiv.org/pdf/2506.23135"], 1, 2),
     ("ABotPhysWorld", ["https://arxiv.org/pdf/2603.23376"], 1, 2),
-    ("Principia", ["https://arxiv.org/pdf/2609.04200"], 1, 2),
-    ("PVBench", ["https://arxiv.org/pdf/2610.26711"], 1, 2),
 ]
 # Manual, PDF-point crop rectangles for papers with image-only captions and
 # layouts where Figure 1 spans both columns despite a narrow caption line.
@@ -55,10 +47,6 @@ MANUAL_CROPS = {
     "ABotPhysWorld": {
         "overview": (2, [65, 421, 545, 636], 1, "Figure 1: Data creation and training pipeline"),
         "architecture": (3, [65, 60, 545, 330], 2, "Figure 2: Two-stage training pipeline"),
-    },
-    "PVBench": {
-        "overview": (1, [65, 393, 545, 662], 1, "Figure 1: Overview and categories of PVBench"),
-        "architecture": (3, [65, 205, 545, 443], 2, "Figure 2: PVBench prompt and evaluation data curation"),
     },
     "TouchTwin": {
         "overview": (0, [66, 435, 544, 620], 1, "Figure 1: TouchTwin overview; human touch grounded physics replay"),
@@ -96,7 +84,7 @@ MANUAL_CROPS = {
         "architecture": (3, [44, 47, 574, 280], 2, "Fig. 2: Method overview: task-aware digital cousins and sim-real policy co-training"),
     },
 }
-REFRESH = {"PVBench", "ABotPhysWorld"}  # Keep prior verified screenshots unchanged when adding papers
+REFRESH = {"ABotPhysWorld"}  # Keep prior verified screenshots unchanged when adding papers
 
 FIG_RE = re.compile(r"^\s*(?:fig\.?|figure)\s*(\d+)\s*[:.\-\u2014]", re.IGNORECASE)
 SESSION = requests.Session()
