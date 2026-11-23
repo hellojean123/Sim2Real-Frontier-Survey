@@ -10,7 +10,7 @@
 | TabletopGen | [Fig.1 · p.2](../assets/paper-screenshots/TabletopGen-overview.jpg) | [Fig.2 · p.6](../assets/paper-screenshots/TabletopGen-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2512.01204) |
 | EmbodiedGen V2 | [Fig.1 · p.1](../assets/paper-screenshots/EmbodiedGenV2-overview.jpg) | [Fig.2 · p.4（资产生成）](../assets/paper-screenshots/EmbodiedGenV2-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2607.07459) |
 | SimFoundry | [Fig.1 · p.1](../assets/paper-screenshots/SimFoundry-overview.jpg) | [Fig.2 · p.4](../assets/paper-screenshots/SimFoundry-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2606.28276) |
-| MANGO | [Fig.1 · 原始 PDF](../assets/paper-screenshots/MANGO-overview.jpg) | [Fig.2 · 原始 PDF](../assets/paper-screenshots/MANGO-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2601.09605) |
+| MANGO | [Fig.1 · p.1](../assets/paper-screenshots/MANGO-overview.jpg) | [Fig.2 · p.2](../assets/paper-screenshots/MANGO-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2601.09605) |
 | SPARR | [Fig.1 · p.1](../assets/paper-screenshots/SPARR-overview.jpg) | [Fig.3 · p.4](../assets/paper-screenshots/SPARR-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2602.23253) |
 | PIN-WM | [Fig.1 · p.1](../assets/paper-screenshots/PIN-WM-overview.jpg) | [Fig.2 · p.4](../assets/paper-screenshots/PIN-WM-architecture.jpg) | [论文原文](https://www.roboticsproceedings.org/rss21/p153.pdf) |
 | RoboTwin 2.0 | [Fig.1 · p.2](../assets/paper-screenshots/RoboTwin-overview.jpg) | [Fig.2 · p.4](../assets/paper-screenshots/RoboTwin-architecture.jpg) | [论文原文](https://raw.githubusercontent.com/mlresearch/v306/main/assets/chen26j/chen26j.pdf) |
