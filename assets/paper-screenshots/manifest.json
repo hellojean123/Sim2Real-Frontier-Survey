@@ -257,10 +257,10 @@
           "figure": 1,
           "caption": "Figure 1: Unseen viewpoint sim-to-real translation with fixed real cameras",
           "crop_pdf_points": [
-            287.0,
+            324.0,
             170.0,
             586.0,
-            395.0
+            439.0
           ]
         },
         "architecture": {
