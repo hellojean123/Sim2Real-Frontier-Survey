@@ -520,9 +520,13 @@ flowchart TD
 
 ![MANGO 原论文 Figure 1](../../assets/paper-screenshots/MANGO-overview.jpg)
 
+*原论文 Figure 1，PDF 第 1 页：[查看原文](https://arxiv.org/pdf/2601.09605#page=1)。*
+
 **原论文 Figure 2：无配对 GAN 翻译、Patch 对比损失、分割 NCE 和判别器正则化**
 
 ![MANGO 原论文 Figure 2](../../assets/paper-screenshots/MANGO-architecture.jpg)
+
+*原论文 Figure 2，PDF 第 2 页：[查看原文](https://arxiv.org/pdf/2601.09605#page=2)。*
 
 来源：[arXiv 论文 PDF](https://arxiv.org/pdf/2601.09605)。读图时要分清**方法训练用的无配对 RGB 数据**和**策略训练用的带动作标签仿真示教**；前者不需要仿真与真实逐帧对应，后者仍必须与动作序列对齐。
 
@@ -577,6 +581,6 @@ MANGO 相比“仅原始数据”的收益明确，但**与 VISTA 对比时只�
 ### ⑧ 方法特点与局限性（含复现审计）
 **优点**：GAN 级模型而非重训大型视频扩散模型，主要创新集中在 InfoNCE、语义分割辅助监督和判别器正则化，适合计算机视觉/EECS；可只用图像数据复现训练及 FID 消融；官方仓库提供训练、测试、CUT 等基线脚本及 [训练图像数据](https://huggingface.co/datasets/jcoholich/mango_data)。官方脚本如 [3a_proposed_method_all.bash](https://github.com/jmcoholich/mango-release/blob/main/scripts/3a_proposed_method_all.bash) 公开了随机种子、$256^2$ 输入、Patch Size、9 个生成器 ResNet Blocks、SegNCE 与 PatchNCE 参数。
 
-**局限**：完整真机策略性能需要真实机器人、ACT 训练与对应初态/相机配置；翻译器依赖仿真语义 Mask 和足够正确的几何结构；静态图像看起来真实并不能证明接触、时间连续性及力学状态真实。**代码审计≠运行验证**：当前为论文、源码与数据入口的静态核验，尚未执行单卡复现或核对下载完整性。
+**局限**：完整真机策略性能需要真实机器人、ACT 训练与对应初态/相机配置；翻译器依赖仿真语义 Mask 和足够正确的几何结构；静态图像看起来真实并不能证明接触、时间连续性及力学状态真实。**代码审计≠运行验证**：当前为论文、源码与数据入口的静态核验，尚未执行单卡复现或核对下载完整性。进一步核对发现仓库 **README 指定 Python 3.10 / PyTorch 2.1 与 demo_translate 环境名，但 environment.yaml 指向 Python 3.12 / PyTorch 2.5 与 demo_translate_test**；这意味着环境文档并非严格一致，实际复现前需要固定经测试的依赖组合，不能宣称原仓库提供完全无调试的一键环境。
 
 **推荐的低成本复现边界**：固定图像数据与随机种子，运行 MANGO / CUT / 去 SegNCE / 不修改 PatchNCE 四组实验，对比 Randomized View FID、对象 Mask 边界一致性和耗时；先不要承诺复现全部真机结果。可与 §2.3 RoboRender 对照：二者都处理视觉域差距，但 MANGO 轻量且**不生成时间上的新运动**，RoboRender 处理条件视频，成本与时序风险不同。
