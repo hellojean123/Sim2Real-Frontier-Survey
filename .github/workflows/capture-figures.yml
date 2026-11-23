@@ -2,6 +2,9 @@ name: Capture original paper figures
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/capture_paper_figures.py'
 
 permissions:
   contents: write

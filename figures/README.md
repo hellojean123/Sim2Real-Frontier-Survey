@@ -10,12 +10,14 @@
 | TabletopGen | [Fig.1 · p.2](../assets/paper-screenshots/TabletopGen-overview.jpg) | [Fig.2 · p.6](../assets/paper-screenshots/TabletopGen-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2512.01204) |
 | EmbodiedGen V2 | [Fig.1 · p.1](../assets/paper-screenshots/EmbodiedGenV2-overview.jpg) | [Fig.2 · p.4（资产生成）](../assets/paper-screenshots/EmbodiedGenV2-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2607.07459) |
 | SimFoundry | [Fig.1 · p.1](../assets/paper-screenshots/SimFoundry-overview.jpg) | [Fig.2 · p.4](../assets/paper-screenshots/SimFoundry-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2606.28276) |
+| MANGO | [Fig.1 · p.1](../assets/paper-screenshots/MANGO-overview.jpg) | [Fig.2 · p.2](../assets/paper-screenshots/MANGO-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2601.09605) |
 | SPARR | [Fig.1 · p.1](../assets/paper-screenshots/SPARR-overview.jpg) | [Fig.3 · p.4](../assets/paper-screenshots/SPARR-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2602.23253) |
 | PIN-WM | [Fig.1 · p.1](../assets/paper-screenshots/PIN-WM-overview.jpg) | [Fig.2 · p.4](../assets/paper-screenshots/PIN-WM-architecture.jpg) | [论文原文](https://www.roboticsproceedings.org/rss21/p153.pdf) |
 | RoboTwin 2.0 | [Fig.1 · p.2](../assets/paper-screenshots/RoboTwin-overview.jpg) | [Fig.2 · p.4](../assets/paper-screenshots/RoboTwin-architecture.jpg) | [论文原文](https://raw.githubusercontent.com/mlresearch/v306/main/assets/chen26j/chen26j.pdf) |
 | RoboDream | [Fig.1 · p.1](../assets/paper-screenshots/RoboDream-overview.jpg) | [Fig.2 · p.3](../assets/paper-screenshots/RoboDream-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2606.02577) |
 | Real2Render2Real | [Fig.1 · p.2](../assets/paper-screenshots/R2R2R-overview.jpg) | [Fig.2 · p.3（实验图）](../assets/paper-screenshots/R2R2R-architecture.jpg) | [论文原文](https://raw.githubusercontent.com/mlresearch/v305/main/assets/yu25a/yu25a.pdf) |
 | SCIZOR | [Fig.1 · p.2](../assets/paper-screenshots/SCIZOR-overview.jpg) | [Fig.2 · p.4](../assets/paper-screenshots/SCIZOR-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2505.22626) |
+| TUCO | [Fig.1 · p.3](../assets/paper-screenshots/TUCO-overview.jpg) | [Fig.2 · p.7（结果图）](../assets/paper-screenshots/TUCO-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2610.05407) |
 | MetaGenSim | [Fig.1 · p.1](../assets/paper-screenshots/MetaGenSim-overview.jpg) | [Fig.2 · p.4](../assets/paper-screenshots/MetaGenSim-architecture.jpg) | [论文原文](https://arxiv.org/pdf/2610.19479) |
 | Sim-and-Real Co-Training | [Fig.1 · p.1](../assets/paper-screenshots/CoTraining-overview.jpg) | [Fig.2 · p.4](../assets/paper-screenshots/CoTraining-architecture.jpg) | [论文原文](https://www.roboticsproceedings.org/rss21/p109.pdf) |
 
@@ -35,6 +37,8 @@
 4. 自绘的中文流程图保存在 [assets/methods](../assets/methods/)，不同于原论文截图；另外一些历史作者网站图片仍在 `assets/paper-figures/`。
 5. **新加入的三篇论文**：TabletopGen Figure 1/2、EmbodiedGen V2 Figure 1/2、SimFoundry Figure 1/2 均依据 2026-11-19 上传的相应 PDF 选择并核对；EmbodiedGen V2 的 Figure 2 只覆盖其资产生成分支，不能当成全部世界生成系统的唯一架构图。
 6. **Real2Render2Real** 的 Figure 1 已展示数据生产全流程，Figure 2 属于数据生成效率与真实策略表现，未将其误称为“架构图”。
+
+**MANGO** Figure 1/2 和 **TUCO** Figure 1/2 于 2026-11-23 加入截图清单；TUCO 第二张是 RoboMimic 筛选效果曲线，不是第二张架构图。实际裁剪范围、图页码与源 URL 请以更新后的 [manifest](../assets/paper-screenshots/manifest.json) 核对。
 
 第 6 章保留的 7 篇论文的 Figure 1/2 均由 PDF 截取，包含来源页码和裁切记录；部分 Figure 2 可能是数据或结果图，而不是网络架构图，具体以原图标题为准。
 

@@ -24,6 +24,7 @@ PAPERS = [
     ("TabletopGen", ["https://arxiv.org/pdf/2512.01204v4", "https://arxiv.org/pdf/2512.01204"], 1, 2),
     ("EmbodiedGenV2", ["https://arxiv.org/pdf/2607.07459v3", "https://arxiv.org/pdf/2607.07459"], 1, 2),
     ("SimFoundry", ["https://arxiv.org/pdf/2606.28276v4", "https://arxiv.org/pdf/2606.28276"], 1, 2),
+    ("MANGO", ["https://arxiv.org/pdf/2601.09605v3", "https://arxiv.org/pdf/2601.09605"], 1, 2),
     ("SPARR", ["https://arxiv.org/pdf/2602.23253"], 1, 3),
     ("PIN-WM", ["https://www.roboticsproceedings.org/rss21/p153.pdf"], 1, 2),
     ("RoboTwin", ["https://raw.githubusercontent.com/mlresearch/v306/main/assets/chen26j/chen26j.pdf",
@@ -31,6 +32,7 @@ PAPERS = [
     ("RoboDream", ["https://arxiv.org/pdf/2606.02577"], 1, 2),
     ("R2R2R", ["https://raw.githubusercontent.com/mlresearch/v305/main/assets/yu25a/yu25a.pdf"], 1, 2),
     ("SCIZOR", ["https://arxiv.org/pdf/2505.22626"], 1, 2),
+    ("TUCO", ["https://arxiv.org/pdf/2610.05407v1", "https://arxiv.org/pdf/2610.05407"], 1, 2),
     ("MetaGenSim", ["https://arxiv.org/pdf/2610.19479"], 1, 2),
     ("CoTraining", ["https://www.roboticsproceedings.org/rss21/p109.pdf"], 1, 2),
     ("PhysX3D", ["https://arxiv.org/pdf/2507.12465"], 1, 2),
@@ -44,6 +46,13 @@ PAPERS = [
 # Manual, PDF-point crop rectangles for papers with image-only captions and
 # layouts where Figure 1 spans both columns despite a narrow caption line.
 MANUAL_CROPS = {
+    "MANGO": {
+        "overview": (0, [306, 170, 586, 439], 1, "Figure 1: Unseen viewpoint sim-to-real translation with fixed real cameras"),
+    },
+    "TUCO": {
+        "overview": (2, [69, 60, 550, 387], 1, "Figure 1: Closed-loop influence, utility/coverage and subset optimization"),
+        "architecture": (6, [68, 62, 548, 289], 2, "Figure 2: RoboMimic filtering and selection results (NOT a model architecture)"),
+    },
     "ABotPhysWorld": {
         "overview": (2, [65, 421, 545, 636], 1, "Figure 1: Data creation and training pipeline"),
         "architecture": (3, [65, 60, 545, 330], 2, "Figure 2: Two-stage training pipeline"),
@@ -84,7 +93,7 @@ MANUAL_CROPS = {
         "architecture": (3, [44, 47, 574, 280], 2, "Fig. 2: Method overview: task-aware digital cousins and sim-real policy co-training"),
     },
 }
-REFRESH = {"ABotPhysWorld"}  # Keep prior verified screenshots unchanged when adding papers
+REFRESH = {"MANGO"}  # Re-capture MANGO Figure 1 after correcting the right-column crop; reuse others
 
 FIG_RE = re.compile(r"^\s*(?:fig\.?|figure)\s*(\d+)\s*[:.\-\u2014]", re.IGNORECASE)
 SESSION = requests.Session()
@@ -235,7 +244,7 @@ def main():
     (DEST/"manifest.json").write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     total=sum(len(x["screenshots"]) for x in manifest["papers"].values())
     print(f"FINISHED: {total}/{2*len(PAPERS)} original screenshots, {len(manifest['failures'])} warnings", flush=True)
-    if total < 30:
-        raise SystemExit("Fewer than 30 actual screenshots extracted. Manual review needed.")
+    if total < 46:
+        raise SystemExit("Fewer than 46 actual screenshots extracted. Manual review needed.")
 if __name__=="__main__":
     main()

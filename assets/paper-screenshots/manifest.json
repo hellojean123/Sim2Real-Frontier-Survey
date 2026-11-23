@@ -241,6 +241,42 @@
         }
       }
     },
+    "MANGO": {
+      "pdf": "https://arxiv.org/pdf/2601.09605v3",
+      "available_figure_numbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/MANGO-overview.jpg",
+          "page": 1,
+          "figure": 1,
+          "caption": "Figure 1: Unseen viewpoint sim-to-real translation with fixed real cameras",
+          "crop_pdf_points": [
+            306.0,
+            170.0,
+            586.0,
+            439.0
+          ]
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/MANGO-architecture.jpg",
+          "page": 2,
+          "figure": 2,
+          "caption": "Fig. 2: MANGO is trained on unpaired real and sim images, specifically a real dataset obtained with a fixed camera and a",
+          "crop_pdf_points": [
+            25.0,
+            32.0,
+            587.0,
+            277.8
+          ]
+        }
+      }
+    },
     "SPARR": {
       "pdf": "https://arxiv.org/pdf/2602.23253",
       "available_figure_numbers": [
@@ -458,6 +494,36 @@
             64,
             561,
             303
+          ]
+        }
+      }
+    },
+    "TUCO": {
+      "pdf": "https://arxiv.org/pdf/2610.05407v1",
+      "available_figure_numbers": [],
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/TUCO-overview.jpg",
+          "page": 3,
+          "figure": 1,
+          "caption": "Figure 1: Closed-loop influence, utility/coverage and subset optimization",
+          "crop_pdf_points": [
+            69.0,
+            60.0,
+            550.0,
+            387.0
+          ]
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/TUCO-architecture.jpg",
+          "page": 7,
+          "figure": 2,
+          "caption": "Figure 2: RoboMimic filtering and selection results (NOT a model architecture)",
+          "crop_pdf_points": [
+            68.0,
+            62.0,
+            548.0,
+            289.0
           ]
         }
       }
