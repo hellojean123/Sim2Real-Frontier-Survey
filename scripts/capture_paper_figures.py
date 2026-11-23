@@ -46,6 +46,9 @@ PAPERS = [
 # Manual, PDF-point crop rectangles for papers with image-only captions and
 # layouts where Figure 1 spans both columns despite a narrow caption line.
 MANUAL_CROPS = {
+    "MANGO": {
+        "overview": (0, [287, 170, 586, 395], 1, "Figure 1: Unseen viewpoint sim-to-real translation with fixed real cameras"),
+    },
     "TUCO": {
         "overview": (2, [69, 60, 550, 387], 1, "Figure 1: Closed-loop influence, utility/coverage and subset optimization"),
         "architecture": (6, [68, 62, 548, 289], 2, "Figure 2: RoboMimic filtering and selection results (NOT a model architecture)"),
@@ -90,7 +93,7 @@ MANUAL_CROPS = {
         "architecture": (3, [44, 47, 574, 280], 2, "Fig. 2: Method overview: task-aware digital cousins and sim-real policy co-training"),
     },
 }
-REFRESH = set()  # Reuse all previously verified screenshots when adding papers
+REFRESH = {"MANGO"}  # Re-capture MANGO Figure 1 after correcting the right-column crop; reuse others
 
 FIG_RE = re.compile(r"^\s*(?:fig\.?|figure)\s*(\d+)\s*[:.\-\u2014]", re.IGNORECASE)
 SESSION = requests.Session()
