@@ -47,7 +47,7 @@ PAPERS = [
 # layouts where Figure 1 spans both columns despite a narrow caption line.
 MANUAL_CROPS = {
     "MANGO": {
-        "overview": (0, [287, 170, 586, 395], 1, "Figure 1: Unseen viewpoint sim-to-real translation with fixed real cameras"),
+        "overview": (0, [324, 170, 586, 439], 1, "Figure 1: Unseen viewpoint sim-to-real translation with fixed real cameras"),
     },
     "TUCO": {
         "overview": (2, [69, 60, 550, 387], 1, "Figure 1: Closed-loop influence, utility/coverage and subset optimization"),
