@@ -255,12 +255,12 @@
           "path": "assets/paper-screenshots/MANGO-overview.jpg",
           "page": 1,
           "figure": 1,
-          "caption": "Fig. 1: (a) Standard image translation methods fail to gen-",
+          "caption": "Figure 1: Unseen viewpoint sim-to-real translation with fixed real cameras",
           "crop_pdf_points": [
-            25.0,
-            106.8,
-            587.0,
-            396.8
+            287.0,
+            170.0,
+            586.0,
+            395.0
           ]
         },
         "architecture": {
