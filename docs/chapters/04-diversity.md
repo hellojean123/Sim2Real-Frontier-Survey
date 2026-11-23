@@ -368,9 +368,13 @@ TUCO 要回答的问题是：**如果目标只有少量示教与真实执行反�
 
 ![TUCO 原论文 Figure 1](../../assets/paper-screenshots/TUCO-overview.jpg)
 
+*原论文 Figure 1，PDF 第 3 页：[查看原文](https://arxiv.org/pdf/2610.05407#page=3)。*
+
 **原论文 Figure 2：RoboMimic 单仿真过滤与子集选择成功率曲线**
 
 ![TUCO 原论文 Figure 2](../../assets/paper-screenshots/TUCO-architecture.jpg)
+
+*原论文 Figure 2，PDF 第 7 页：[查看原文](https://arxiv.org/pdf/2610.05407#page=7)。*
 
 **说明**：Figure 2 是**实验结果图**，并非另一张网络结构图；Figure 1 已完整包含算法架构。这两图的 PDF 页码与坐标均由截图来源清单记录。
 
