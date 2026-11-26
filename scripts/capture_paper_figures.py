@@ -249,4 +249,4 @@ def main():
 if __name__=="__main__":
     # Preserve the previously published original survey figures; supplement the new survey.
     from capture_trajectory_figures import main as capture_trajectory
-    capture_trajectory()
+    capture_trajectory()  # v2: replace full-page placeholders with figure-anchored crops
