@@ -1,0 +1,1062 @@
+{
+  "source": "original PDFs only",
+  "new_papers": 31,
+  "new_images": 62,
+  "complete_pairs": 31,
+  "papers": {
+    "MimicGen": {
+      "pdf": "https://arxiv.org/pdf/2310.17596",
+      "pdf_sha256": "7345661fb8e8581981e272e1e043561cbfdaf3f8403d2cb5e28f70797c9bbb16",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/MimicGen-overview.jpg",
+          "figure": 1,
+          "pdf_page": 2,
+          "caption": "Figure 1: MimicGen Overview. We introduce a data generation system that can produce large diverse",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 735568
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/MimicGen-architecture.jpg",
+          "figure": 2,
+          "pdf_page": 3,
+          "caption": "Figure 2: MimicGen System Pipeline. (left) MimicGen first parses the demos from the source dataset into segments, where each segment corresponds to an object-centric subtask (Sec. 4.1). (right) Then, to generate new demonstrations for a new scene, MimicGen generates and follows a sequence of end-effector target poses for each subtask by (1) choosing a segment from a source demonstration (chosen se",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 693955
+        }
+      }
+    },
+    "DexMimicGen": {
+      "pdf": "https://arxiv.org/pdf/2410.24185",
+      "pdf_sha256": "96349aac2708b5637bbbefa9964067b5ed7eac0fb51ba0248b8d8dcbe49352a2",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/DexMimicGen-overview.jpg",
+          "figure": 1,
+          "pdf_page": 1,
+          "caption": "Fig. 1: DexMimicGen Overview. DexMimicGen offers an efficient pipeline to train capable bimanual dexterous robots. (left) First, a human operator col- lects around five task demonstrations using a teleoperation device. (middle) Next, DexMimicGen automatically generates a large set of demonstration",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 897532
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/DexMimicGen-architecture.jpg",
+          "figure": 3,
+          "pdf_page": 4,
+          "caption": "Fig. 3: DexMimicGen Workflow. Left: segment source demonstrations for each arm through manually defined heuristics or human and records the poses of the reference objects. Right: In a new simulation environment, we generate trajectories by transforming source trajectories with reference object poses and executing them.",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 860906
+        }
+      }
+    },
+    "SkillMimicGen / SkillGen": {
+      "pdf": "https://arxiv.org/pdf/2410.18907",
+      "pdf_sha256": "2bdf9e56f6b7f59832f116710bd8c18369d51c3f16cccc16651180fa0c3e2c7a",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/SkillMimicGen-SkillGen-overview.jpg",
+          "figure": 1,
+          "pdf_page": 2,
+          "caption": "Figure 1: SkillGen Overview. SkillGen trains proficient agents with minimal human effort. (left) First, a human teleoperator first collects ∼3 demonstrations of the task and annotates the start and end of the skill segments, where each object interaction happens. (middle) Then, SkillGen automatically adapts these local skill demonstrations to new scenes and connects them through motion planning to",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 736775
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/SkillMimicGen-SkillGen-architecture.jpg",
+          "figure": 2,
+          "pdf_page": 4,
+          "caption": "Figure 2: HSP Deployment. At test-time SkillGen, executes several learned skills in sequence, using motion planning to connect the termination state of the last skill with an initiation state of the next skill. Each skill consists of the initiation condition Iθ, the closed-loop controller πθ, and the termination condition Tθ. adopting a skill-based framework allows for more focused demonstration r",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 680082
+        }
+      }
+    },
+    "AutoMoMa": {
+      "pdf": "https://arxiv.org/pdf/2604.12565",
+      "pdf_sha256": "61479754db6909cf30a454ac04e5434bf017fd9e3e8c222f5706b93717139f3b",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/AutoMoMa-overview.jpg",
+          "figure": 1,
+          "pdf_page": 1,
+          "caption": "Figure 1. Overview of the AutoMoMa framework. Coordinated mobile manipulation demands large-scale, physically valid trajectory data—a bottleneck that existing teleoperation and planning methods cannot overcome at scale. AutoMoMa addresses this by unify- ing Augmented Kinematic Representation (AKR) modeling, which consolidates base, arm, and object kinematics into a single chain, with GPU-accelerat",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 810933
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/AutoMoMa-architecture.jpg",
+          "figure": 3,
+          "pdf_page": 5,
+          "caption": "Figure 3. The AutoMoMa data generation pipeline. Starting from a task specification triplet pS, O, Rq (left), AutoMoMa proceeds through four stages: (i) Task Specification defines the environmental, robotic, and object context; (ii) Problem Instantiation trans- forms raw scene assets into planning-ready primitives via ESDF construction and AKR assembly with spherical collision approximations; (iii",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 846925
+        }
+      }
+    },
+    "AffordGen": {
+      "pdf": "https://arxiv.org/pdf/2604.10579",
+      "pdf_sha256": "5a09d77acf94de283636145754492b3ca9bbb3d08ed51e87960820f2c4f8f0c7",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/AffordGen-overview.jpg",
+          "figure": 1,
+          "pdf_page": 1,
+          "caption": "Figure 1. AffordGen overview. (a) Diverse trajectory generation for novel objects via one-shot demonstration. (b) Superior performance against powerful baselines. (c) Real-world generalization to unseen objects from a single source.",
+          "crop_pdf_points": [
+            46.5,
+            228.66183471679688,
+            565.4989624023438,
+            486.34539794921875
+          ],
+          "capture_mode": "caption_adjacent_raster_crop",
+          "bytes": 125906
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/AffordGen-architecture.jpg",
+          "figure": 2,
+          "pdf_page": 3,
+          "caption": "Figure 2. 1. AffordGen takes in a source expert demonstration and splits it into different functioning segments. 2. We extract keypoints on the source object and establish correspondences between them and many target objects in 3D space through visual foundation models. 3. By transferring the task-related segments and planning the transition segments, AffordGen can generate diverse and large-scale",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 645680
+        }
+      }
+    },
+    "FieldGen": {
+      "pdf": "https://arxiv.org/pdf/2510.20774",
+      "pdf_sha256": "d68eebef4e673a63a3b819decec41f6e1b6307bee44909de859caecf7f5b2491",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/FieldGen-overview.jpg",
+          "figure": 1,
+          "pdf_page": 1,
+          "caption": "Fig. 1: FieldGen is a semi-auto data generation framework that enables scalable collection of diverse, high-quality real-world manipulation data with minimal human involvement.",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 793406
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/FieldGen-architecture.jpg",
+          "figure": 2,
+          "pdf_page": 3,
+          "caption": "Fig. 2: (a) Cone Field for Position. (b) Spherical Field for Orientation.",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 732512
+        }
+      }
+    },
+    "DiscoDemo": {
+      "pdf": "https://arxiv.org/pdf/2610.32093",
+      "pdf_sha256": "891fc5b4a6d2a1538ecf2e43b87686dad0b06265fd9125a0dc6d89fd3f0d1c0e",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/DiscoDemo-overview.jpg",
+          "figure": 1,
+          "pdf_page": 2,
+          "caption": "Figure 1: Solution discovery broadens coverage. Single-solution data provide narrow coverage, and augmentation mainly expands around existing trajectories. DISCODEMO, our method instead discovers distinct successful solutions that broaden state-space coverage.",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 738656
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/DiscoDemo-architecture.jpg",
+          "figure": 2,
+          "pdf_page": 3,
+          "caption": "Figure 2: Overview of DISCODEMO. (a) We train a privileged generator with a parallel reverse curriculum, sparse task reward, success-gated diversity, and safety shaping. (b) The trained generator produces successful and diverse demonstrations, filtered for physically undesirable interactions. (c) The retained observation–action data train a downstream visuomotor policy by imitation learning.",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 763495
+        }
+      }
+    },
+    "QDTraj": {
+      "pdf": "https://arxiv.org/pdf/2604.22551",
+      "pdf_sha256": "e81c2e2e6a8b4f47341166dd43c1a707ea1097766832ed50389a0427cf6bd4c8",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/QDTraj-overview.jpg",
+          "figure": 1,
+          "pdf_page": 1,
+          "caption": "Fig. 1. Plug-and-play QDTraj exploration algorithm. Given an articu- lated object URDF and an activation task, QDtraj generates sets of diverse trajectory primitives to achieve the task. Trajectory primitives generated in",
+          "crop_pdf_points": [
+            301.20001220703125,
+            179.54473876953125,
+            570.00634765625,
+            369.32666015625
+          ],
+          "capture_mode": "caption_adjacent_raster_crop",
+          "bytes": 97611
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/QDTraj-architecture.jpg",
+          "figure": 2,
+          "pdf_page": 2,
+          "caption": "Fig. 2. Input/Output of QDtrajAction plug-and-play module As input the Experimental Box URDF and an activation task to accomplish. In orange on the CAD is the axis of revolution of the hinge involved in the task input",
+          "crop_pdf_points": [
+            301.20001220703125,
+            36.08341979980469,
+            570.0018310546875,
+            236.566650390625
+          ],
+          "capture_mode": "caption_adjacent_raster_crop",
+          "bytes": 95251
+        }
+      }
+    },
+    "SOE": {
+      "pdf": "https://arxiv.org/pdf/2509.19292",
+      "pdf_sha256": "b93683822ba27eee862cebf8c5a0735f86d47d1ebb4af8d9a9577e8f4f79e400",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/SOE-overview.jpg",
+          "figure": 1,
+          "pdf_page": 1,
+          "caption": "Fig. 1: Overview of SOE. By constraining exploration to the manifold of valid actions, our approach generates diverse yet temporally coherent behaviors, enabling structured and efficient exploration. The collected rollout data is used to",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 896559
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/SOE-architecture.jpg",
+          "figure": 2,
+          "pdf_page": 3,
+          "caption": "Fig. 2: Dual-Path Architecture of SOE. The observation embedding is processed through two parallel paths: the base path (top), responsible for stable policy execution, and the exploration path (bottom), responsible for generating diverse",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 891794
+        }
+      }
+    },
+    "RDGen": {
+      "pdf": "https://arxiv.org/pdf/2605.30957",
+      "pdf_sha256": "047a9442a2e5860b3e0e989bf61329cd7d010a26469a16e9f1889cfa9059d493",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/RDGen-overview.jpg",
+          "figure": 1,
+          "pdf_page": 2,
+          "caption": "Figure 1: Overview of RDGen. Given a language instruction, a VLM parses the task and generates object queries, which are grounded into 3D positions via language-guided perception. Low-level control policies are trained in simulation using SAC and transferred to the real robot to execute",
+          "crop_pdf_points": [
+            60.0,
+            57.99986267089844,
+            551.88037109375,
+            330.64678955078125
+          ],
+          "capture_mode": "caption_adjacent_raster_crop",
+          "bytes": 209520
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/RDGen-architecture.jpg",
+          "figure": 2,
+          "pdf_page": 6,
+          "caption": "Figure 2: Example of language-guided object localization in a real scene. Grounding DINO detects the target object “paper box” and the manipulated object “gray cube” from agent-generated language queries.",
+          "crop_pdf_points": [
+            60.0,
+            58.00042724609375,
+            551.9022216796875,
+            268.84881591796875
+          ],
+          "capture_mode": "caption_adjacent_raster_crop",
+          "bytes": 87016
+        }
+      }
+    },
+    "URSA": {
+      "pdf": "https://raw.githubusercontent.com/mlresearch/v305/main/assets/grillotti25a/grillotti25a.pdf",
+      "pdf_sha256": "b3347c9bc7d31f1441d951fe424d7ac3a14fcad5473887d03f89081c78e1e2c2",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/URSA-overview.jpg",
+          "figure": 1,
+          "pdf_page": 1,
+          "caption": "Figure 1: We propose Unsupervised Real-world Skill Acquisition (URSA), a framework for unsuper- vised quality-diversity in real-world environments. Each skill is plotted in the latent space with color indicating its estimated value, V (s0, z), highlighting the diversity of learned behaviors.",
+          "crop_pdf_points": [
+            95.7509994506836,
+            214.88775634765625,
+            517.6492004394531,
+            435.862548828125
+          ],
+          "capture_mode": "caption_adjacent_raster_crop",
+          "bytes": 163223
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/URSA-architecture.jpg",
+          "figure": 2,
+          "pdf_page": 3,
+          "caption": "Figure 2: Overview of URSA: The system checks if the state st is safe, if so, encodes it into features ϕt, and builds a diverse skill repertoire R. New skills are sampled using a Kernel Density Estimator on the repertoire from the safe, reachable skill space. The skill-conditioned policy πz maximizes its expected return while matching the sampled skill z.",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 541493
+        }
+      }
+    },
+    "SymmGrid": {
+      "pdf": "https://arxiv.org/pdf/2607.26985",
+      "pdf_sha256": "edd22c69f486a67f4a1c36f0e835aa8809a5b22e2460046b1a7e128e1352f3b0",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/SymmGrid-overview.jpg",
+          "figure": 1,
+          "pdf_page": 2,
+          "caption": "Fig. 1: Real Franka research robot examples of manipulation contact tasks.",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 878285
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/SymmGrid-architecture.jpg",
+          "figure": 2,
+          "pdf_page": 4,
+          "caption": "Fig. 2: Constant branching visualization.",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 880483
+        }
+      }
+    },
+    "SkillWeaver": {
+      "pdf": "https://arxiv.org/pdf/2609.36171",
+      "pdf_sha256": "29ddc32168eb63277df4cacfc8b3683e6d2621732f08f476389c7d923a6bcddc",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/SkillWeaver-overview.jpg",
+          "figure": 1,
+          "pdf_page": 1,
+          "caption": "Figure 1: We present SkillWeaver, an agentic robot data engine that generates large-scale demon- strations in simulation. Given a simulated scene and a robot manipulation task, the agent composes reusable neural interaction skills with verifier-guided embodied search, and retains successful expe- rience as demonstrations. The generated demonstrations are distilled into visuomotor policies such",
+          "crop_pdf_points": [
+            96.0,
+            440.23565673828125,
+            516.0033264160156,
+            728.3810424804688
+          ],
+          "capture_mode": "caption_adjacent_raster_crop",
+          "bytes": 275556
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/SkillWeaver-architecture.jpg",
+          "figure": 2,
+          "pdf_page": 4,
+          "caption": "Figure 2: Overview of SkillWeaver. SkillWeaver generates robot experience through agentic ex- ploration over Neural Interaction Skills (NIS). At each exploration step, a VLM agent selects and parameterizes an NIS, executes it in the environment, and observes the resulting state. A hierarchical verifier evaluates the physical outcome and provides progress rewards and reflection, while semantic",
+          "crop_pdf_points": [
+            96.0,
+            58.00135803222656,
+            516.0033569335938,
+            349.8030700683594
+          ],
+          "capture_mode": "caption_adjacent_raster_crop",
+          "bytes": 291734
+        }
+      }
+    },
+    "KnowDemo": {
+      "pdf": "https://arxiv.org/pdf/2609.21229",
+      "pdf_sha256": "124c7b72a370f09f23ae2e47a75df64e7ce21cad5009824b93d5498aa7c8ad43",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/KnowDemo-overview.jpg",
+          "figure": 1,
+          "pdf_page": 2,
+          "caption": "Fig. 1. Overview of KNOWDEMO. (a) Pick, place, and close frames from a human demonstration, the target workspace, and its digital twin. (b) A drawer-closure example links an inferred task goal to required conditions, the video reference, and allowed alternatives. (c) Colors link alternatives to grounded regions and candidate contacts. Rendered robots and objects are composited onto the real backgr",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 770279
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/KnowDemo-architecture.jpg",
+          "figure": 4,
+          "pdf_page": 6,
+          "caption": "Fig. 4. Human grasp and placement references with corresponding robot grasps in simulation: (a) cabinet top to drawer, using a top-down robot approach; (b) beneath an extended drawer to cabinet top, pairing a palm-",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 814880
+        }
+      }
+    },
+    "DROM": {
+      "pdf": "https://arxiv.org/pdf/2609.37348",
+      "pdf_sha256": "9c0ddef3080de20d1672de6137a66fc4d100e668a3228da4e890366b6d5ef736",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/DROM-overview.jpg",
+          "figure": 1,
+          "pdf_page": 2,
+          "caption": "Fig. 1: Illustration of the two operational modalities of DROM: (a) language- guided single-skill execution, where an operator query is embedded and mapped to a manipulation primitive to generate a skill-consistent trajectory; and (b) language- guided long-horizon planning, where a language model decomposes a high-level",
+          "crop_pdf_points": [
+            112.59500122070312,
+            59.69732666015625,
+            507.2535095214844,
+            372.85552978515625
+          ],
+          "capture_mode": "caption_adjacent_raster_crop",
+          "bytes": 212564
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/DROM-architecture.jpg",
+          "figure": 2,
+          "pdf_page": 6,
+          "caption": "Fig. 2: Overview of the diffusion-based training pipeline of DROM: (A) collection of a single expert demonstration per skill; (B) synthetic dataset expansion using Dynamic Movement Primitives (DMPs); (C) training of the skill-conditioned diffusion model on the augmented multi-skill dataset; and (D) deployment in simulation and on real",
+          "crop_pdf_points": [
+            112.59500122070312,
+            322.82763671875,
+            507.2635192871094,
+            597.3074951171875
+          ],
+          "capture_mode": "caption_adjacent_raster_crop",
+          "bytes": 216260
+        }
+      }
+    },
+    "RoboGene": {
+      "pdf": "https://arxiv.org/pdf/2602.16444",
+      "pdf_sha256": "6635860be999c3f592640c7edaa1611c7ab20ef85fefb06cd224af2a032225f2",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/RoboGene-overview.jpg",
+          "figure": 1,
+          "pdf_page": 2,
+          "caption": "Figure 1: RoboGene is an agentic framework designed to automate the generation of diverse, infor- mative, and physically plausible manipulation tasks, thereby enhancing the foundational capability and generalizability of VLA model pre-training.",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 681267
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/RoboGene-architecture.jpg",
+          "figure": 3,
+          "pdf_page": 4,
+          "caption": "Figure 3: Overview of RoboGene. The framework comprises three key components: (1) a diversity- driven sampling mechanism based on a Least Frequently Used (LFU) strategy; (2) a self-reflection mechanism that enhances task generation quality; and (3) a long-term memory module that consol- idates Human-in-the-Loop (HITL) feedback.",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 649462
+        }
+      }
+    },
+    "DreamGen": {
+      "pdf": "https://raw.githubusercontent.com/mlresearch/v305/main/assets/jang25a/jang25a.pdf",
+      "pdf_sha256": "d2103c9f0384e16750a8a5692e410cc14da953eb9dd53a395a680471d30968c3",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/DreamGen-overview.jpg",
+          "figure": 1,
+          "pdf_page": 1,
+          "caption": "Figure 1: Generalization through DREAMGEN. We enable 2D visuomotor robot policies to gen- eralize to new environments with new behaviors, while only collecting teleoperation data for a single behavior type (pick&place) in a single environment by utilizing video world models as syn- thetic data generators.",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 499038
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/DreamGen-architecture.jpg",
+          "figure": 2,
+          "pdf_page": 2,
+          "caption": "Figure 2: DREAMGEN Overview. We begin by fine-tuning a video world model on teleoperated robot trajectories. Given an initial frame and a language instruction, the model generates video rollouts depicting the intended behavior. As these videos lack action annotations, we infer pseudo- actions using either a latent action model or an inverse dynamics model, forming what we call neural",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 584950
+        }
+      }
+    },
+    "RoboCurate": {
+      "pdf": "https://arxiv.org/pdf/2602.18742",
+      "pdf_sha256": "dc96dce3693581545b2dfd450d5799c0a455a0ef90e3394398b01b44fd23d306",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/RoboCurate-overview.jpg",
+          "figure": 1,
+          "pdf_page": 2,
+          "caption": "Figure 1: Overview of RoboCurate. Our action-verified filtering curates synthetic data by pre- filtering physically implausible videos with a VLM and then verifying motion consistency between a generated video and a simulator replay, discarding samples with motion-inconsistent IDM-predicted actions. To improve filtering effectiveness, we diversify synthetic data by editing four scene compo-",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 688702
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/RoboCurate-architecture.jpg",
+          "figure": 3,
+          "pdf_page": 6,
+          "caption": "Figure 3: An overview of experimental design for RoboCurate. We conduct two-phase experi- ments: (1) pre-training on real and synthetic data followed by fine-tuning on simulated data, and",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 626496
+        }
+      }
+    },
+    "IntervenGen": {
+      "pdf": "https://arxiv.org/pdf/2405.01472",
+      "pdf_sha256": "f48937379bc49480f6553447cbb01c68a43efc0e4a153b15ac31231ae352caa3",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/IntervenGen-overview.jpg",
+          "figure": 1,
+          "pdf_page": 1,
+          "caption": "Fig. 1: Overview. IntervenGen automatically generates corrective interven- tional data from a small number of human interventions, with coverage across both diverse scene configurations and policy mistake distributions. Here, the robot mistakenly believes the peg is at the position highlighted in",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 887618
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/IntervenGen-architecture.jpg",
+          "figure": 2,
+          "pdf_page": 3,
+          "caption": "Fig. 2: I-Gen Data Generation Example. We provide an example of how I-Gen generates a new intervention. First, a new task instance is sampled with a new configuration (square peg location) and observation corruption (incorrect peg location highlighted in red). We execute the robot policy to generate mistake behavior for the new task instance. When a mistake is detected, we sample a human intervent",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 778184
+        }
+      }
+    },
+    "MOVE": {
+      "pdf": "https://arxiv.org/pdf/2512.04813",
+      "pdf_sha256": "8129443706db38d217382f3eac5429cca74652831975fdeae521397987323c9e",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/MOVE-overview.jpg",
+          "figure": 1,
+          "pdf_page": 1,
+          "caption": "Fig. 1: We uniformly sample 10 trajectories from each of the 9 points across the entire space using both static data collection and MOVE. To ensure a fair comparison, we enforce that the grasping point of each MOVE trajectory corresponds to that of a static",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 909094
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/MOVE-architecture.jpg",
+          "figure": 2,
+          "pdf_page": 2,
+          "caption": "Fig. 2: An overview of the MOVE data collection paradigm. (Left) A conceptual comparison between the standard static data collection paradigm and MOVE. The former samples from discrete, fixed spatial configurations, where each trajectory represents a single point in the spatial configuration space. In contrast, each trajectory collected by MOVE is treated as a continuous segment, with objects, tar",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 898429
+        }
+      }
+    },
+    "Geometric Entropy": {
+      "pdf": "https://arxiv.org/pdf/2606.20871v2",
+      "pdf_sha256": "a3fda6fe8a72cfaf2f53199f47fe1ee1abfcc31979e7f4b768d2b30e9b1c2419",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/Geometric-Entropy-overview.jpg",
+          "figure": 1,
+          "pdf_page": 4,
+          "caption": "Fig. 1: Trajectory manifolds under varying approach radius r. At r ≈0 (left), demonstrations follow near-identical descents. At moderate r (center), approach paths form a cone of curved arcs. At large r (right), the manifold expands",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 785199
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/Geometric-Entropy-architecture.jpg",
+          "figure": 2,
+          "pdf_page": 4,
+          "caption": "Fig. 2: HG convergence on StackCube-v1. Across all (r, k) settings, HG stabilizes within the first 50–100 suc- cessful trajectories, enabling reliable pre-training audits at practical collection scales.",
+          "crop_pdf_points": [
+            301.20001220703125,
+            201.5504913330078,
+            570.0050048828125,
+            443.3980407714844
+          ],
+          "capture_mode": "caption_adjacent_raster_crop",
+          "bytes": 76851
+        }
+      }
+    },
+    "Vendi Score": {
+      "pdf": "https://arxiv.org/pdf/2210.02410",
+      "pdf_sha256": "6882e9fd9c43326b9e4772c432f280a56af68c639cc1d169b238d6e03aee61fb",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/Vendi-Score-overview.jpg",
+          "figure": 1,
+          "pdf_page": 2,
+          "caption": "Figure 1: (a) The Vendi Score, vs in the figure, can be interpreted as the effective number of unique elements in a sample. It increases linearly with the number of modes in the dataset. IntDiv, the expected dissimilarity, becomes less sensitive as the number of modes increases, converging to 1. (b) Combining distinct similarity",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 430511
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/Vendi-Score-architecture.jpg",
+          "figure": 2,
+          "pdf_page": 9,
+          "caption": "Figure 2: VS increases proportionally with diversity in three sets of synthetic datasets. In each row, we sample datasets from univariate mixture-of-normal distri- butions, varying either the number of components, the mixture proportions, or the",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 455596
+        }
+      }
+    },
+    "Data Quality in Imitation Learning": {
+      "pdf": "https://arxiv.org/pdf/2306.02437",
+      "pdf_sha256": "a6aded39474c30a47587af315edd99d9684927e1ed9b44c09dcfea4b1d95f6b0",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/Data-Quality-in-Imitation-Learning-overview.jpg",
+          "figure": 1,
+          "pdf_page": 7,
+          "caption": "Figure 1: Case Study: Trajectories and action variance for scripted (left two plots) compared to human demonstration data (right two plots). Even though the human data (right) has high state coverage, the action variance is high, leading to high action divergence, and vice versa.",
+          "crop_pdf_points": [
+            95.7760009765625,
+            58.000999450683594,
+            516.0011291503906,
+            209.11236572265625
+          ],
+          "capture_mode": "caption_adjacent_raster_crop",
+          "bytes": 112797
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/Data-Quality-in-Imitation-Learning-architecture.jpg",
+          "figure": 2,
+          "pdf_page": 8,
+          "caption": "Figure 2: BC Success rates in PMObstacle (top row) for 1000 and 10 episodes of data, and in Square (bottom row) for 200 and 50 episodes of data (error bars over 3 datasets). X-axis corresponds to injected Gaussian noise in the dataset and each line corresponds to injected system noise (σs) during evaluation. System Noise (left): for large datasets (a)(c), higher system noise during evaluation decr",
+          "crop_pdf_points": [
+            96.0,
+            57.99749755859375,
+            517.2465209960938,
+            306.03912353515625
+          ],
+          "capture_mode": "caption_adjacent_raster_crop",
+          "bytes": 183683
+        }
+      }
+    },
+    "Robot Data Curation with Mutual Information Estimators": {
+      "pdf": "https://arxiv.org/pdf/2502.08623",
+      "pdf_sha256": "d4c1a5fcf262c5ce35c3dee85d892f82ff0243bf70dac142e5267704e47f1bdd",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/Robot-Data-Curation-with-Mutual-Information-Estimators-overview.jpg",
+          "figure": 1,
+          "pdf_page": 4,
+          "caption": "Fig. 1. A graphical depiction of the DemInf method. First, we begin by learning VAEs for states and action chunks to produce latent representations za and zs. Using these latent representations, we apply the KSG k-nearest-neighbor based mutual information estimator. Finally, we filter demonstrations based on their estimated mutual information.",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 831250
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/Robot-Data-Curation-with-Mutual-Information-Estimators-architecture.jpg",
+          "figure": 2,
+          "pdf_page": 5,
+          "caption": "Fig. 2. The average estimated Iˆ(s; a) per timestep for high quality data (“better” demonstrators) in “Square MH” from RoboMimic [50]. Notice that at the start of the trajectory and after the grasp (75-100 steps), Iˆ is highest,",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 849310
+        }
+      }
+    },
+    "CUPID": {
+      "pdf": "https://arxiv.org/pdf/2506.19121",
+      "pdf_sha256": "ecc67dcdf296c39f14162e30dc29e8d490df4319236dddb2a93c30dd28c86b3c",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/CUPID-overview.jpg",
+          "figure": 1,
+          "pdf_page": 1,
+          "caption": "Figure 1: We present CUPID, a robot data curation method that leverages influence functions to predictively answer counterfactual questions about the effect of each demonstration on downstream policy performance.",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 660335
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/CUPID-architecture.jpg",
+          "figure": 2,
+          "pdf_page": 4,
+          "caption": "Figure 2: Data curation with CUPID. Upon training a policy on a set of demonstrations using behavior cloning, we evaluate it online to collect closed-loop rollout trajectories and estimate the policy’s expected return. CUPID ranks demonstration based on their measured influence on this performance estimate and selects the top-k. Thus, curating with CUPID results in a dataset of demonstrations that",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 642154
+        }
+      }
+    },
+    "D3IL": {
+      "pdf": "https://arxiv.org/pdf/2402.14606",
+      "pdf_sha256": "a560eab947cab0675b9b6b12e7e8b88e2bd78d9dfce8406f431ddd70880a7d3e",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/D3IL-overview.jpg",
+          "figure": 1,
+          "pdf_page": 8,
+          "caption": "Figure 1: Ablation study for different history lengths and prediction horizons on the Aligning task.",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 693243
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/D3IL-architecture.jpg",
+          "figure": 3,
+          "pdf_page": 13,
+          "caption": "Figure 3: D3IL Visualizations. This figure provides an overview of various tasks and behaviors within our dataset. The top row demonstrates one of the 24 possible solutions for the ”Avoiding” task. The second row displays snapshots from all four pushing sequences in the ”Pushing” task, with sub-captions indicating block movements (e.g., ’rr-gg’ signifies red block to red target and",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 443183
+        }
+      }
+    },
+    "Data Scaling Laws": {
+      "pdf": "https://arxiv.org/pdf/2410.18647",
+      "pdf_sha256": "e3ee296bdf1b34dde4816d36207a0b2b496c66ab352299702e9efc8187e7ec07",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/Data-Scaling-Laws-overview.jpg",
+          "figure": 1,
+          "pdf_page": 2,
+          "caption": "Figure 1: Illustrations of all tasks. We derive the data scaling laws through extensive experiments on Pour Water and Mouse Arrangement, and further validate these findings on additional tasks, including Fold Towels and Unplug Charger.",
+          "crop_pdf_points": [
+            96.0,
+            67.8699951171875,
+            516.0032958984375,
+            340.1320495605469
+          ],
+          "capture_mode": "caption_adjacent_raster_crop",
+          "bytes": 212312
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/Data-Scaling-Laws-architecture.jpg",
+          "figure": 2,
+          "pdf_page": 6,
+          "caption": "Figure 2: Object generalization. Each curve corresponds to a different fraction of demonstrations used, with normalized scores shown as a function of the number of training objects.",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 582295
+        }
+      }
+    },
+    "Factored Scaling Curves": {
+      "pdf": "https://arxiv.org/pdf/2505.07728",
+      "pdf_sha256": "1b2b190ce27184b6d916febba4f08fb151a564ae34af57f838555873b0064b16",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/Factored-Scaling-Curves-overview.jpg",
+          "figure": 1,
+          "pdf_page": 1,
+          "caption": "Figure 1: To efficiently collect demonstrations so as to maximize policy performance under a fixed data bud- get, we propose factored scaling curves: a principled tool to quantify how policy performance changes with the quantity of factor data. Based on factored scaling curves, we can allocate the data budget to collecting demonstrations that vary different factors based on their importance.",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 512654
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/Factored-Scaling-Curves-architecture.jpg",
+          "figure": 2,
+          "pdf_page": 4,
+          "caption": "Figure 2: Illustration of factored scaling curves used to inform data allocation. For the distractor fac- tor, points are used to construct the scaling curve,",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 590125
+        }
+      }
+    },
+    "What Matters": {
+      "pdf": "https://arxiv.org/pdf/2506.13536",
+      "pdf_sha256": "6486ddeed533a7d2484cb0106af0ef3d78ec1ce167b9614264c4811f59a5c96d",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/What-Matters-overview.jpg",
+          "figure": 1,
+          "pdf_page": 2,
+          "caption": "Figure 1: MimicLabs overview. Our framework encompasses: (1) A procedural dataset generator that creates diverse datasets with controlled composition. (2) A large-scale dataset composition study to analyze the impact of dataset diversity and alignment inspired by practical settings. (3) Extensive real-world experiments using existing large-scale robot datasets, based on study insights.",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 793762
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/What-Matters-architecture.jpg",
+          "figure": 2,
+          "pdf_page": 3,
+          "caption": "Figure 2: Characterizing Co-Training Settings: (a) We consider four co-training settings character- ized by the diversity of their co-training datasets and their alignment with the target dataset. This is illustrated with the object spatial DV of the coffee pod. (b) The collectors aim to select and increase the diversity of selected DV(s) to improve the utility of a dataset. (c) The retrievers aim",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 696668
+        }
+      }
+    },
+    "Is Diversity All You Need?": {
+      "pdf": "https://arxiv.org/pdf/2507.06219",
+      "pdf_sha256": "609956e716ed3d160dc6367e454b26e7025c164b31053e86e8fa84e48cfc9212",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/Is-Diversity-All-You-Need-overview.jpg",
+          "figure": 1,
+          "pdf_page": 1,
+          "caption": "Fig. 1: We investigate critical aspects of data diversity for robotic manipulation systematically, i.e., task, embodiment, and expert diversity. Through comprehensive evaluation in simulation and the real world, we reveal key insights that challenge conventional assumptions on data scaling. (a) Task diversity benefits policy learning with predictable power-law scaling. (b) Multi-embodiment pre-tra",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 891759
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/Is-Diversity-All-You-Need-architecture.jpg",
+          "figure": 2,
+          "pdf_page": 3,
+          "caption": "Fig. 2: Illustration of the multimodal expert behavior in task Push-T [32]. The robot (blue circle) needs to move the gray T to the green target area. Expert demonstrations exhibit multimodality in both spatial and action rate dimensions: (a)",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 958316
+        }
+      }
+    },
+    "HeteroMotion": {
+      "pdf": "https://openaccess.thecvf.com/content/CVPR2026W/ScaleBot/papers/Eslami_Toward_Motion_Diverse_Community_Datasets_for_VLA-Based_Robot_Learning_CVPRW_2026_paper.pdf",
+      "pdf_sha256": "f351d5cf48d5294b91d042cff6ec54f38bb8e7ab1e1636e2182049134705b466",
+      "screenshots": {
+        "overview": {
+          "path": "assets/paper-screenshots/trajectory-diversity/HeteroMotion-overview.jpg",
+          "figure": 1,
+          "pdf_page": 3,
+          "caption": "Figure 1. Overview of the proposed dataset, HeteroMotion, highlighting the robotic platform and five task categories designed to promote diverse manipulation skills and complex reasoning.",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 629139
+        },
+        "architecture": {
+          "path": "assets/paper-screenshots/trajectory-diversity/HeteroMotion-architecture.jpg",
+          "figure": 2,
+          "pdf_page": 4,
+          "caption": "Figure 2. Average success rate across down-steram tasks. Error bars denote 95% confidence intervals.",
+          "crop_pdf_points": [
+            0.0,
+            0.0,
+            612.0,
+            792.0
+          ],
+          "capture_mode": "full_figure_page",
+          "bytes": 796327
+        }
+      }
+    }
+  }
+}
