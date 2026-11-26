@@ -2,11 +2,13 @@
 
 > **2025–2026** · 可执行场景生成 / 视觉真实性 / 物理可靠性 / 轨迹多样性 · 真机与仿真数据协同训练
 
-本仓库系统整理 23 篇/组 Sim-to-Real 代表研究。每篇按八部分介绍：论文与机构、依据 Abstract 的中文译述、研究动机、作者主图、算法技术、中文完整流程、真实/仿真实验、适用边界。
+本仓库原有主综述系统整理 23 篇/组 Sim-to-Real 代表研究；新增独立的轨迹多样性专题整理 34 篇核心相关工作。每篇按八部分介绍：论文与机构、依据 Abstract 的中文译述、研究动机、作者主图、算法技术、中文完整流程、真实/仿真实验、适用边界。
 
 ## 阅读入口
 
 - **[完整中文综述（推荐直接阅读）](docs/Sim2Real_前沿技术路线综述_2025-2026.md)**
+- **[轨迹多样性专题深度综述（34 篇，2026-11-26）](docs/轨迹多样性_生成机制与质量评估专题综述_2026-11-26.md)**：轨迹生成、RL/QD 探索、几何熵/Vendi/MI、目标域效用筛选、数据规模与可证伪实验；每篇附中文完整信息摘要与双图
+
 - [第 2 章｜视觉真实性](docs/chapters/02-visual.md)：GSWorld、RE³SIM、RoboRender、TabletopGen、EmbodiedGen V2、SimFoundry、MANGO
 - [第 3 章｜物理可靠性](docs/chapters/03-physics.md)：SPARR、PIN-WM
 - [第 4 章｜轨迹多样性](docs/chapters/04-diversity.md)：RoboTwin 2.0、RoboDream、Real2Render2Real、SCIZOR、TUCO（交叉阅读 SimFoundry Digital Cousins）
@@ -51,4 +53,6 @@ scripts/capture_paper_figures.py
 
 第 6 章聚焦可交互场景、真实数据约束和具身世界模型，不再收录偏材料/数值物理的研究；八部分方法分析模板保留。
 
-本仓库独立研究 Sim-to-Real，不关联任何特定 instruct-WAM 课题。论文概述依据英文 Abstract 忠实中文译述；方法分析和横向比较为本调研独立整理。更新于 2026-11-23。
+新专题保留旧文献交叉链接，新增原文截图及图源记录，但不覆盖原综述。**图片采集自动化不等于逐图人工验收，正式使用前应核对原论文 Figure。**
+
+本仓库独立研究 Sim-to-Real，不关联任何特定 instruct-WAM 课题。论文概述依据英文 Abstract 忠实中文译述；方法分析和横向比较为本调研独立整理。更新于 2026-11-26。
