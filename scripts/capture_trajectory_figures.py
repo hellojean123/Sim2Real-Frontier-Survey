@@ -191,6 +191,26 @@ def main():
     md=md.replace("对旧文沿用仓库已有图，对新文提供原文/项目图入口及中文流程，不声称新截图已保存。",status)
     md=md.replace("新论文原始图片通过原文/项目入口阅读，未下载截图到仓库。",status)
     md=re.sub(r"截图补充：本专题 34 篇核心论文，复用 3 篇的 6 张原图；新增已保存 \d+ 张原论文截图（\d+/\d+ 篇新增论文具备双图）。图源清单记录失败、图号、PDF 页码及截取坐标；自动裁切未逐图人工复核。",lambda _:status,md)
+    # Build small QA contact sheets for reviewing every cropped paper image.
+    from PIL import ImageDraw, ImageFont
+    all_shots=[]
+    for paper,entry in sorted(results.items()):
+        for role,ss in entry.get("screenshots",{}).items():
+            all_shots.append((paper,role,ROOT/ss["path"]))
+    cols,rows=4,4
+    tile_w,tile_h=430,310
+    for start in range(0,len(all_shots),cols*rows):
+        canvas=Image.new("RGB",(cols*tile_w,rows*tile_h),(247,247,247))
+        draw=ImageDraw.Draw(canvas)
+        for idx,(paper,role,path) in enumerate(all_shots[start:start+cols*rows]):
+            x=(idx%cols)*tile_w;y=(idx//cols)*tile_h
+            name=(paper+" / "+role)[:54]
+            draw.text((x+8,y+7),name,fill=(35,35,35))
+            with Image.open(path) as im:
+                im=im.convert("RGB")
+                im.thumbnail((tile_w-15,tile_h-38),Image.Resampling.LANCZOS)
+                canvas.paste(im,(x+(tile_w-im.width)//2,y+29))
+        canvas.save(DEST/f"contact-{start//(cols*rows):02d}.jpg","JPEG",quality=87,optimize=True)
     MAN.write_text(json.dumps({"source":"original PDFs only","crop_algorithm_version":2,"quality_note":"Caption-anchored crops, automated; still require per-paper visual review","new_papers":len(items),"new_images":count,"complete_pairs":complete,"papers":results},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     DOC.write_text(md,encoding="utf-8")
     # The existing figure workflow stages assets itself; stage the matching Markdown here
