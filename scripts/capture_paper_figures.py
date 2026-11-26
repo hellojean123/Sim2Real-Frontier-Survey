@@ -247,4 +247,6 @@ def main():
     if total < 46:
         raise SystemExit("Fewer than 46 actual screenshots extracted. Manual review needed.")
 if __name__=="__main__":
-    main()
+    # Preserve the previously published original survey figures; supplement the new survey.
+    from capture_trajectory_figures import main as capture_trajectory
+    capture_trajectory()
